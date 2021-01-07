@@ -1,89 +1,92 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+  <div>
+    <firstpage id="firstpage" />
+    <!-- <dividerOne id="dividerOneid" />
+    <secondpage id="secondpageid" />
+    <dividerTwo id="dividerTwoid" />
+    <thirdpage id="thirdpageid" />
+    <dividerThree id="dividerThreeid" />
+    <about id="aboutid" />
+    <footer1 id="footerid" /> -->
+    <v-btn
+      :class="{ btn_scroll_open: scrollTop > 300 }"
+      class="btn_top pa-7 white--text"
+      href="#mainid"
+      icon
+      elevation="8"
+    >
+      <v-icon>mdi-arrow-up-thick</v-icon>
+    </v-btn>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import firstpage from "../components/FirstPage.vue";
+/* import secondpage from "../components/SecondPage.vue";
+import thirdpage from "../components/ThirdPage.vue";
+import about from "../components/about.vue";
+import footer1 from "../components/Footer.vue";
+import dividerOne from "../components/svg/common/dividerOne.vue";
+import dividerTwo from "../components/svg/common/dividerTwo.vue";
+import dividerThree from "../components/svg/common/dividerThree.vue"; */
 
 export default {
   components: {
-    Logo,
-    VuetifyLogo
-  }
-}
+    firstpage,
+    /* secondpage,
+    thirdpage,
+    about,
+    footer1,
+    dividerOne,
+    dividerTwo,
+    dividerThree, */
+  },
+  data() {
+    return {
+      tab: 0,
+      scrollTop: 0,
+    };
+  },
+  methods: {
+    onScroll(e) {
+      /* console.log(this.scrollTop) */
+      this.scrollTop = e.target.documentElement.scrollTop;
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.onScroll);
+    var newHeight = window.innerHeight;
+    if (newHeight < 700) {
+      newHeight = 700;
+    }
+    document.getElementById("firstpage").style.height = `${newHeight}px`;
+
+    window.addEventListener("resize", function () {
+      newHeight = window.innerHeight;
+      if (newHeight < 700) {
+        newHeight = 700;
+      } else if (newHeight > 701 && newHeight < 850) {
+        newHeight = window.outerHeight;
+      }
+      document.getElementById("firstpage").style.height = `${newHeight}px`;
+    });
+  },
+};
 </script>
+<style scoped>
+.main {
+  position: relative;
+  width: 100%;
+}
+.btn_scroll_open {
+  bottom: 5% !important;
+}
+.btn_top {
+  transition: 0.5s;
+  z-index: 2;
+  position: fixed;
+  bottom: -80px;
+  right: 5%;
+  background: #3f51b5 !important;
+}
+</style>

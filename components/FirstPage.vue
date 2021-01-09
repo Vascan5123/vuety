@@ -53,7 +53,7 @@
             <v-tab-item>
               <v-card flat color="transparent">
                 <v-card-title
-                  class="purple1 text-h4 text-sm-h3 text_top font-weight-bold"
+                  class="purple1--text text-h4 text-sm-h3 text_top font-weight-bold"
                 >
                   That Means We Don't Just Deliver
                 </v-card-title>
@@ -85,22 +85,23 @@
         x-large
         color="#685f99"
         elevation="2"
-        ><v-icon>mdi-chevron-double-down</v-icon></v-btn
       >
+        <v-icon>mdi-chevron-double-down</v-icon>
+      </v-btn>
     </v-col>
-    <!-- <indexSvgRightTop />
-    <indexSvgRight /> -->
+    <indexSvgRightTop />
+    <indexSvgRight />
   </v-container>
 </template>
 
 <script>
-/* import indexSvgRightTop from "../components/indexSvgRightTop.vue";
-import indexSvgRight from "../components/indexSvgRight.vue"; */
+import indexSvgRightTop from "../components/indexSvgRightTop.vue";
+import indexSvgRight from "../components/indexSvgRight.vue";
 
 export default {
   components: {
-    /* indexSvgRightTop,
-    indexSvgRight, */
+    indexSvgRightTop,
+    indexSvgRight,
   },
   data() {
     return {

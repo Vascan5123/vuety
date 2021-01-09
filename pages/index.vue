@@ -1,13 +1,13 @@
 <template>
   <div>
     <firstpage id="firstpage" />
-    <!-- <dividerOne id="dividerOneid" />
+    <dividerOne id="dividerOneid" />
     <secondpage id="secondpageid" />
     <dividerTwo id="dividerTwoid" />
     <thirdpage id="thirdpageid" />
     <dividerThree id="dividerThreeid" />
     <about id="aboutid" />
-    <footer1 id="footerid" /> -->
+    <footer1 id="footerid" />
     <v-btn
       :class="{ btn_scroll_open: scrollTop > 300 }"
       class="btn_top pa-7 white--text"
@@ -22,24 +22,24 @@
 
 <script>
 import firstpage from "../components/FirstPage.vue";
-/* import secondpage from "../components/SecondPage.vue";
+import secondpage from "../components/SecondPage.vue";
 import thirdpage from "../components/ThirdPage.vue";
 import about from "../components/about.vue";
 import footer1 from "../components/Footer.vue";
 import dividerOne from "../components/svg/common/dividerOne.vue";
 import dividerTwo from "../components/svg/common/dividerTwo.vue";
-import dividerThree from "../components/svg/common/dividerThree.vue"; */
+import dividerThree from "../components/svg/common/dividerThree.vue";
 
 export default {
   components: {
     firstpage,
-    /* secondpage,
+    secondpage,
     thirdpage,
     about,
     footer1,
     dividerOne,
     dividerTwo,
-    dividerThree, */
+    dividerThree,
   },
   data() {
     return {
@@ -74,6 +74,9 @@ export default {
 };
 </script>
 <style scoped>
+#firstpage{
+  height: 800px;
+}
 .main {
   position: relative;
   width: 100%;

@@ -1,13 +1,13 @@
 <template>
   <div>
     <firstpage id="firstpage" />
-    <dividerOne id="dividerOneid" />
-    <secondpage id="secondpageid" />
-    <dividerTwo id="dividerTwoid" />
-    <thirdpage id="thirdpageid" />
-    <dividerThree id="dividerThreeid" />
-    <about id="aboutid" />
-    <footer1 id="footerid" />
+    <dividerOne v-if="dividerOne" id="dividerOneid" />
+    <secondpage v-if="secondpage" id="secondpageid" />
+    <dividerTwo v-if="dividerTwo" id="dividerTwoid" />
+    <thirdpage v-if="thirdpage" id="thirdpageid" />
+    <dividerThree v-if="dividerThree" id="dividerThreeid" />
+    <about v-if="about" id="aboutid" />
+    <footer1 v-if="footer1" id="footerid" />
     <v-btn
       :class="{ btn_scroll_open: scrollTop > 300 }"
       class="btn_top pa-7 white--text"
@@ -45,6 +45,13 @@ export default {
     return {
       tab: 0,
       scrollTop: 0,
+      secondpage: false,
+      thirdpage: false,
+      about: false,
+      footer1: false,
+      dividerOne: false,
+      dividerTwo: false,
+      dividerThree: false,
     };
   },
   methods: {
@@ -54,12 +61,21 @@ export default {
     },
   },
   mounted() {
-    window.addEventListener("scroll", this.onScroll);
-    var newHeight = window.innerHeight;
-    if (newHeight < 700) {
-      newHeight = 700;
+    if (process.browser) {
+      this.secondpage = true;
+      this.thirdpage = true;
+      this.about = true;
+      this.dividerOne = true;
+      this.dividerTwo = true;
+      this.dividerThree = true;
+      this.footer1 = true;
+      var newHeight = window.innerHeight;
+      if (newHeight < 700) {
+        newHeight = 700;
+      }
+      document.getElementById("firstpage").style.height = `${newHeight}px`;
     }
-    document.getElementById("firstpage").style.height = `${newHeight}px`;
+    window.addEventListener("scroll", this.onScroll);
 
     window.addEventListener("resize", function () {
       newHeight = window.innerHeight;
@@ -74,8 +90,9 @@ export default {
 };
 </script>
 <style scoped>
-#firstpage{
-  height: 800px;
+#firstpage {
+  width: 100vw;
+  height: 100vh;
 }
 .main {
   position: relative;

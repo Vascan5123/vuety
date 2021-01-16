@@ -11,7 +11,7 @@
         Delicious
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon class="menusvg" @click="opendrawer()">
+      <v-btn name="btn_open_drawer" icon class="menusvg" @click="opendrawer()">
         <svg
           width="40"
           height="28"
@@ -47,6 +47,7 @@
       </v-btn>
     </v-toolbar>
     <v-app-bar
+      v-if="app_bar"
       app
       inverted-scroll
       class="toolbar1 px-4 px-md-16"
@@ -157,6 +158,7 @@
 export default {
   data() {
     return {
+      app_bar: false,
       drawer: false,
       items: [
         { title: "Home", icon: "mdi-home", link: "/#" },
@@ -165,6 +167,9 @@ export default {
         { title: "About us", icon: "mdi-account-multiple", link: "/#aboutid" },
       ],
     };
+  },
+  mounted(){
+    this.app_bar = true;
   },
   methods: {
     opendrawer() {

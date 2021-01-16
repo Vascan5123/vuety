@@ -39,7 +39,6 @@
     </svg>
     <!--  -->
     <svg
-      id="morph-example"
       class="svg_right_2"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -69,8 +68,6 @@
       <circle class="svg_right_2_3" cx="503" cy="105" r="77" />
     </svg>
     <svg
-      version="1.1"
-      id="Слой_1"
       class="svg_left"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -99,7 +96,12 @@
 
 <script>
 export default {
-  mounted() {},
+  data(){
+    return{
+    }
+  },
+  mounted() {
+  },
 };
 </script>
 <style scoped>

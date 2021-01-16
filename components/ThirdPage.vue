@@ -129,7 +129,7 @@
                 <iconsSVG :logoTitle="logoChoose" />
               </svg>
 
-              <foreignObject
+              <!-- <foreignObject
                 x="380px"
                 y="330px"
                 width="200"
@@ -139,7 +139,7 @@
                 <body xmlns="http://www.w3.org/1999/xhtml">
                   <p class="text-center">{{ textChoose }}</p>
                 </body>
-              </foreignObject>
+              </foreignObject> -->
 
               <svg x="395" y="540" width="158" height="56" viewBox="0 0 158 56">
                 <g @click="openLink(linkChoose)" class="btn_openLink">

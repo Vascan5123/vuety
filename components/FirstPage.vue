@@ -89,8 +89,8 @@
         <v-icon>mdi-chevron-double-down</v-icon>
       </v-btn>
     </v-col>
-    <indexSvgRightTop />
-    <indexSvgRight />
+    <indexSvgRightTop v-if="svg_1_active" />
+    <indexSvgRight v-if="svg_2_active" />
   </v-container>
 </template>
 
@@ -106,7 +106,15 @@ export default {
   data() {
     return {
       tab: 0,
+      svg_1_active: false,
+      svg_2_active: false,
     };
+  },
+  mounted() {
+    if (process.browser) {
+      this.svg_1_active = true;
+      this.svg_2_active = true;
+    }
   },
 };
 </script>

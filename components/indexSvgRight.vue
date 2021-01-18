@@ -748,12 +748,9 @@
 import anime from "animejs";
 
 export default {
-  data() {
-    return {
-    };
-  },
+
   mounted() {
-    /* if (process.browser) {
+    if (process.browser) {
       anime({
         targets: "#rectangle",
         d: [
@@ -804,7 +801,7 @@ export default {
         easing: "easeInOutExpo",
         elasticity: 20,
       });
-    } */
+    }
 
     /* KUTE.fromTo(
       "#rectangle",

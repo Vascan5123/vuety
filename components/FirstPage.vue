@@ -111,7 +111,7 @@ export default {
     };
   },
   mounted() {
-    if (process.browser) {
+    if (process.client) {
       this.svg_1_active = true;
       this.svg_2_active = true;
     }

@@ -39,8 +39,13 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    '@nuxtjs/robots'
   ],
-
+  robots: {
+    UserAgent: '*',
+    Disallow: '/user',
+  },
+  
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
     customVariables: ['~/assets/variables.scss'],

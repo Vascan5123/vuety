@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <toolbar v-if="toolbar_active" />
+    <toolbar />
     <v-main id="mainid" class="main grey lighten-5">
       <nuxt />
     </v-main>
@@ -16,13 +16,9 @@ export default {
   },
   data() {
     return {
-      toolbar_active: false,
     };
   },
   mounted() {
-    if (process.browser) {
-      this.toolbar_active = true;
-    }
   },
 };
 </script>

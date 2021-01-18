@@ -1,13 +1,13 @@
 <template>
   <div>
     <firstpage id="firstpage" />
-    <dividerOne v-if="dividerOne" id="dividerOneid" />
-    <secondpage v-if="secondpage" id="secondpageid" />
-    <dividerTwo v-if="dividerTwo" id="dividerTwoid" />
-    <thirdpage v-if="thirdpage" id="thirdpageid" />
-    <dividerThree v-if="dividerThree" id="dividerThreeid" />
-    <about v-if="about" id="aboutid" />
-    <footer1 v-if="footer1" id="footerid" />
+    <DividerOne id="dividerOneid" />
+    <secondpage id="secondpageid" />
+    <dividerTwo id="dividerTwoid" />
+    <thirdpage id="thirdpageid" />
+    <dividerThree id="dividerThreeid" />
+    <about id="aboutid" />
+    <footer1 id="footerid" />
     <v-btn
       :class="{ btn_scroll_open: scrollTop > 300 }"
       class="btn_top pa-7 white--text"
@@ -22,6 +22,8 @@
 
 <script>
 import firstpage from "../components/FirstPage.vue";
+
+
 import secondpage from "../components/SecondPage.vue";
 import thirdpage from "../components/ThirdPage.vue";
 import about from "../components/about.vue";
@@ -45,13 +47,6 @@ export default {
     return {
       tab: 0,
       scrollTop: 0,
-      secondpage: false,
-      thirdpage: false,
-      about: false,
-      footer1: false,
-      dividerOne: false,
-      dividerTwo: false,
-      dividerThree: false,
     };
   },
   methods: {
@@ -62,13 +57,6 @@ export default {
   },
   mounted() {
     if (process.browser) {
-      this.secondpage = true;
-      this.thirdpage = true;
-      this.about = true;
-      this.dividerOne = true;
-      this.dividerTwo = true;
-      this.dividerThree = true;
-      this.footer1 = true;
       var newHeight = window.innerHeight;
       if (newHeight < 700) {
         newHeight = 700;

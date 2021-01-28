@@ -1,5 +1,5 @@
 <template>
-  <v-container id="secondpage" class="text-center contain_2 px-md-10" fluid>
+  <v-container id="secondpage" class="text-center px-md-10" fluid>
     <v-row>
       <v-col align-self="start" cols="12" sm="6" md="6">
         <v-card-title class="overline text-h6 blue--text">

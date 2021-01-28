@@ -18,13 +18,17 @@ export default {
     ]
   },
 
+  router: {
+    mode: 'history'
+  },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '~/plugins/anime.js'
+    '~/plugins/anime.js',
+    /* '~/plugins/kute.js' */
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

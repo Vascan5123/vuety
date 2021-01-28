@@ -89,8 +89,12 @@
         <v-icon>mdi-chevron-double-down</v-icon>
       </v-btn>
     </v-col>
+    <transition name="fade">
     <indexSvgRightTop v-if="svg_1_active" />
+    </transition>
+    <transition name="fade">
     <indexSvgRight v-if="svg_2_active" />
+    </transition>
   </v-container>
 </template>
 
@@ -120,6 +124,12 @@ export default {
 </script>
 
 <style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .4s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 .btn_bottom {
   position: absolute;
   bottom: 3%;

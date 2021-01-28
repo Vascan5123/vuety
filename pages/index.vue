@@ -6,6 +6,7 @@
     <dividerTwo id="dividerTwoid" />
     <thirdpage id="thirdpageid" />
     <dividerThree id="dividerThreeid" />
+    <price id="priceid" />
     <about id="aboutid" />
     <footer1 id="footerid" />
     <v-btn
@@ -31,6 +32,7 @@ import footer1 from "../components/Footer.vue";
 import dividerOne from "../components/svg/common/dividerOne.vue";
 import dividerTwo from "../components/svg/common/dividerTwo.vue";
 import dividerThree from "../components/svg/common/dividerThree.vue";
+import price from "../components/price.vue";
 
 export default {
   components: {
@@ -42,6 +44,7 @@ export default {
     dividerOne,
     dividerTwo,
     dividerThree,
+    price,
   },
   data() {
     return {

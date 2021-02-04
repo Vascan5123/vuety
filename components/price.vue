@@ -1,6 +1,6 @@
 <template>
-  <v-container class="text-center px-md-10" fluid>
-    <v-row justify="center" class="my-12">
+  <v-container class="text-center px-md-10 py-10" fluid>
+    <v-row justify="center" class="my-5">
       <v-card-title class="display-2 font-weight-light text_top">Unlock Full Power Of sApp</v-card-title>
       <v-card-subtitle
         class="title font-weight-regular py-8"
@@ -48,7 +48,7 @@
       <v-col cols="12" sm="4" md="4" lg="3" class="px-md-8">
         <v-card class="rounded-lg py-4 py-md-8" outlined>
           <v-row class="ma-0" justify="center">
-            <img width="50%" src="../static/icons/bike.png" />
+            <img width="50%" src="../static/icons/scooter.png" />
           </v-row>
           <div class="price_content">
             <v-card-title
@@ -78,7 +78,7 @@
               </v-list-item>
             </v-list>
             <v-card-actions class="justify-center">
-              <v-btn color="primary" elevation="2">Buy</v-btn>
+              <v-btn color="primary" elevation="6" large rounded>Buy</v-btn>
             </v-card-actions>
           </div>
         </v-card>
@@ -86,7 +86,7 @@
       <v-col cols="12" sm="4" md="4" lg="3" class="px-md-8">
         <v-card class="rounded-lg py-4 py-md-8" outlined>
           <v-row class="ma-0" justify="center">
-            <img width="50%" src="../static/icons/bike.png" />
+            <img width="50%" src="../static/icons/car.png" />
           </v-row>
           <div class="price_content">
             <v-card-title
@@ -116,7 +116,7 @@
               </v-list-item>
             </v-list>
             <v-card-actions class="justify-center">
-              <v-btn color="primary" elevation="2">Buy</v-btn>
+              <v-btn color="primary" elevation="6" large rounded>Buy</v-btn>
             </v-card-actions>
           </div>
         </v-card>

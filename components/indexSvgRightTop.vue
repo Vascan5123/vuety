@@ -12,30 +12,12 @@
       xml:space="preserve"
     >
       <circle class="svg_right_1_1" cx="322" cy="239" r="235" />
-      <path
-        class="svg_right_1_2"
-        d="M280.6,209.8c0-37.5,135.3-67.8,302.4-67.8"
-      />
-      <path
-        class="svg_right_1_2"
-        d="M280.6,209.8c0,17.9-83.9,29.2-218.1,29.2"
-      />
-      <path
-        class="svg_right_1_2"
-        d="M290.6,258.8c0-37.5,135.3-67.8,302.4-67.8"
-      />
-      <path
-        class="svg_right_1_2"
-        d="M290.6,258.8c0,17.9-83.9,29.2-218.1,29.2"
-      />
-      <path
-        class="svg_right_1_2"
-        d="M304.6,307.8c0-37.5,135.3-67.8,302.4-67.8"
-      />
-      <path
-        class="svg_right_1_2"
-        d="M304.6,307.8c0,17.9-83.9,29.2-218.1,29.2"
-      />
+      <path class="svg_right_1_2" d="M280.6,209.8c0-37.5,135.3-67.8,302.4-67.8" />
+      <path class="svg_right_1_2" d="M280.6,209.8c0,17.9-83.9,29.2-218.1,29.2" />
+      <path class="svg_right_1_2" d="M290.6,258.8c0-37.5,135.3-67.8,302.4-67.8" />
+      <path class="svg_right_1_2" d="M290.6,258.8c0,17.9-83.9,29.2-218.1,29.2" />
+      <path class="svg_right_1_2" d="M304.6,307.8c0-37.5,135.3-67.8,302.4-67.8" />
+      <path class="svg_right_1_2" d="M304.6,307.8c0,17.9-83.9,29.2-218.1,29.2" />
     </svg>
     <!--  -->
     <svg
@@ -50,20 +32,11 @@
       xml:space="preserve"
     >
       <circle class="svg_right_2_1" cx="320" cy="240" r="235" />
-      <path
-        class="svg_right_2_2"
-        d="M291.6,188.9c36.5-8.4,96.5,116.5,134.1,279.4"
-      />
+      <path class="svg_right_2_2" d="M291.6,188.9c36.5-8.4,96.5,116.5,134.1,279.4" />
       <path class="svg_right_2_2" d="M291.6,188.9c-17.5,4-47.3-75.2-77.5-206" />
-      <path
-        class="svg_right_2_2"
-        d="M246.1,209.6c36.5-8.4,96.5,116.5,134.1,279.4"
-      />
+      <path class="svg_right_2_2" d="M246.1,209.6c36.5-8.4,96.5,116.5,134.1,279.4" />
       <path class="svg_right_2_2" d="M246.1,209.6c-17.5,4-47.3-75.2-77.5-206" />
-      <path
-        class="svg_right_2_2"
-        d="M201.5,234.3c36.5-8.4,96.5,116.5,134.1,279.4"
-      />
+      <path class="svg_right_2_2" d="M201.5,234.3c36.5-8.4,96.5,116.5,134.1,279.4" />
       <path class="svg_right_2_2" d="M201.5,234.3c-17.5,4-47.3-75.2-77.5-206" />
       <circle class="svg_right_2_3" cx="503" cy="105" r="77" />
     </svg>
@@ -96,12 +69,10 @@
 
 <script>
 export default {
-  data(){
-    return{
-    }
+  data() {
+    return {};
   },
-  mounted() {
-  },
+  mounted() {},
 };
 </script>
 <style scoped>
@@ -179,6 +150,16 @@ export default {
   to {
     right: 5%;
     bottom: 10%;
+  }
+}
+@media (max-width: 760px) {
+  .svg_right_1 {
+    width: 11% !important;
+  }
+  .svg_right_2 {
+    width: 8% !important;
+    top: 7% !important;
+    right: 89% !important;
   }
 }
 .svg_right_2 {

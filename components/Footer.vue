@@ -122,13 +122,13 @@
             </v-col>
           </v-row>
           <v-row no-gutters justify="center" class="mt-12">
-            <v-btn fab x-large class="mx-4 primary" href="#">
+            <v-btn fab x-large class="mx-4 primary" href="#" aria-label="instagram-vuety">
               <v-icon>mdi-instagram</v-icon>
             </v-btn>
-            <v-btn fab x-large class="mx-4 primary" href="https://www.facebook.com/vuetycom">
+            <v-btn fab x-large class="mx-4 primary" href="https://www.facebook.com/vuetycom" aria-label="facebook-vuety">
               <v-icon>mdi-facebook</v-icon>
             </v-btn>
-            <v-btn fab x-large class="mx-4 primary" href="#">
+            <v-btn fab x-large class="mx-4 primary" href="#" aria-label="twitter-vuety">
               <v-icon>mdi-twitter</v-icon>
             </v-btn>
           </v-row>

@@ -10,7 +10,7 @@
       <v-col cols="12" sm="4" md="4" lg="3" class="px-md-8">
         <v-card class="rounded-lg py-4 py-md-8" outlined>
           <v-row class="ma-0" justify="center">
-            <img width="50%" src="../static/icons/bike.png" />
+            <img width="50%" height="auto" src="../static/icons/bike.png" alt="bike" />
           </v-row>
           <div class="price_content">
             <v-card-title
@@ -48,7 +48,7 @@
       <v-col cols="12" sm="4" md="4" lg="3" class="px-md-8">
         <v-card class="rounded-lg py-4 py-md-8" outlined>
           <v-row class="ma-0" justify="center">
-            <img width="50%" src="../static/icons/scooter.png" />
+            <img width="50%" height="auto" src="../static/icons/scooter.png" alt="scooter" />
           </v-row>
           <div class="price_content">
             <v-card-title
@@ -86,7 +86,7 @@
       <v-col cols="12" sm="4" md="4" lg="3" class="px-md-8">
         <v-card class="rounded-lg py-4 py-md-8" outlined>
           <v-row class="ma-0" justify="center">
-            <img width="50%" src="../static/icons/car.png" />
+            <img width="50%" height="auto" src="../static/icons/car.png" alt="car" />
           </v-row>
           <div class="price_content">
             <v-card-title

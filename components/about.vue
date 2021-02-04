@@ -27,10 +27,10 @@
               Authoritatively engage leading-edge processes tactical capital
             </v-card-text>
             <v-card-actions class="justify-center">
-              <v-btn href="#" icon><v-icon>mdi-facebook</v-icon></v-btn>
-              <v-btn href="#" icon><v-icon>mdi-twitter</v-icon></v-btn>
-              <v-btn href="#" icon><v-icon>mdi-github</v-icon></v-btn>
-              <v-btn href="#" icon><v-icon>mdi-linkedin</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="facebook"><v-icon>mdi-facebook</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="twitter"><v-icon>mdi-twitter</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="github"><v-icon>mdi-github</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
             </v-card-actions>
           </v-card>
         </v-card>
@@ -49,10 +49,10 @@
               Authoritatively engage leading-edge processes tactical capital
             </v-card-text>
             <v-card-actions class="justify-center">
-              <v-btn href="#" icon><v-icon>mdi-facebook</v-icon></v-btn>
-              <v-btn href="#" icon><v-icon>mdi-twitter</v-icon></v-btn>
-              <v-btn href="#" icon><v-icon>mdi-github</v-icon></v-btn>
-              <v-btn href="#" icon><v-icon>mdi-linkedin</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="facebook"><v-icon>mdi-facebook</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="twitter"><v-icon>mdi-twitter</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="github"><v-icon>mdi-github</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
             </v-card-actions>
           </v-card>
         </v-card>
@@ -71,10 +71,10 @@
               Authoritatively engage leading-edge processes tactical capital
             </v-card-text>
             <v-card-actions class="justify-center">
-              <v-btn href="#" icon><v-icon>mdi-facebook</v-icon></v-btn>
-              <v-btn href="#" icon><v-icon>mdi-twitter</v-icon></v-btn>
-              <v-btn href="#" icon><v-icon>mdi-github</v-icon></v-btn>
-              <v-btn href="#" icon><v-icon>mdi-linkedin</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="facebook"><v-icon>mdi-facebook</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="twitter"><v-icon>mdi-twitter</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="github"><v-icon>mdi-github</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
             </v-card-actions>
           </v-card>
         </v-card>
@@ -93,10 +93,10 @@
               Authoritatively engage leading-edge processes tactical capital
             </v-card-text>
             <v-card-actions class="justify-center">
-              <v-btn href="#" icon><v-icon>mdi-facebook</v-icon></v-btn>
-              <v-btn href="#" icon><v-icon>mdi-twitter</v-icon></v-btn>
-              <v-btn href="#" icon><v-icon>mdi-github</v-icon></v-btn>
-              <v-btn href="#" icon><v-icon>mdi-linkedin</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="facebook"><v-icon>mdi-facebook</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="facebook"><v-icon>mdi-twitter</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="facebook"><v-icon>mdi-github</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="facebook"><v-icon>mdi-linkedin</v-icon></v-btn>
             </v-card-actions>
           </v-card>
         </v-card>

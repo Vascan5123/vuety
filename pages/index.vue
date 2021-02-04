@@ -16,6 +16,7 @@
       href="#mainid"
       icon
       elevation="8"
+      aria-label="top"
     >
       <v-icon>mdi-arrow-up-thick</v-icon>
     </v-btn>

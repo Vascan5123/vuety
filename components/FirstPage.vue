@@ -85,6 +85,7 @@
         x-large
         color="#685f99"
         elevation="2"
+        aria-label="bottom"
       >
         <v-icon>mdi-chevron-double-down</v-icon>
       </v-btn>

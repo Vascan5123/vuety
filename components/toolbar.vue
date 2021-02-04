@@ -11,13 +11,10 @@
         Delicious
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn name="btn_open_drawer" icon class="menusvg" @click="opendrawer()">
+      <v-btn aria-label="open_driver_1" icon class="menusvg" @click="opendrawer()">
         <svg
           width="40"
           height="28"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px"
           y="0px"
           viewBox="0 0 640 480"
@@ -70,19 +67,15 @@
           {{ item.title }}
         </v-btn>
       </v-toolbar-items>
-
-      <v-btn icon class="menusvg" @click="opendrawer()">
+      <v-btn aria-label="open_driver_2" icon class="menusvg hidden-md-and-up" @click="opendrawer()">
         <svg
           width="40"
           height="28"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px"
           y="0px"
           viewBox="0 0 640 480"
         >
-          <g fill="#fff" class="hidden-md-and-up">
+          <g fill="#fff">
             <path
               class="st0"
               d="M51,271.5c-16.3,0-29.5-13.2-29.5-29.5v-5c0-16.3,13.2-29.5,29.5-29.5h540c16.3,0,29.5,13.2,29.5,29.5v5c0,16.3-13.2,29.5-29.5,29.5H51z"

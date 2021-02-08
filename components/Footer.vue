@@ -27,13 +27,7 @@
       </svg>
     </v-row>
     <v-row no-gutters>
-      <v-card
-        width="100%"
-        flat
-        class="card_footer pa-0 ma-0 pb-16"
-        dark
-        rounded="0"
-      >
+      <v-card width="100%" flat class="card_footer pa-0 ma-0 pb-16" dark rounded="0">
         <svg class="svg_bottom" viewBox="0 0 845 212">
           <path
             d="M845 212V57C845 57 812.266 19.7411 750.5 5.00003C705.397 -5.76432 635.41 1.72064 594 19.5C495.881 61.6271 479.5 98 418 129C346.333 165.125 319.5 161.5 202.5 156.5C85.5 151.5 0 212 0 212H133H845Z"
@@ -43,15 +37,11 @@
         </svg>
         <v-col cols="12" md="8" class="mx-auto">
           <v-col cols="12">
-            <v-card-title class="display-2 font-weight-light pa-0 text_top">
-              Get started now
-            </v-card-title>
+            <v-card-title class="display-2 font-weight-light pa-0 text_top">Get started now</v-card-title>
           </v-col>
           <v-row no-gutters class="mt-12">
             <v-col cols="6" md="3">
-              <v-card-title class="overline text-h6">
-                {{ column1.title }}
-              </v-card-title>
+              <v-card-title class="overline text-h6">{{ column1.title }}</v-card-title>
               <v-list dense color="transparent" width="auto">
                 <v-list-item
                   v-for="(item, index) in column1.items"
@@ -67,9 +57,7 @@
               </v-list>
             </v-col>
             <v-col cols="6" md="3">
-              <v-card-title class="overline text-h6">
-                {{ column2.title }}
-              </v-card-title>
+              <v-card-title class="overline text-h6">{{ column2.title }}</v-card-title>
               <v-list dense color="transparent" width="auto">
                 <v-list-item
                   v-for="(item, index) in column2.items"
@@ -85,9 +73,7 @@
               </v-list>
             </v-col>
             <v-col cols="6" md="3">
-              <v-card-title class="overline text-h6">
-                {{ column3.title }}
-              </v-card-title>
+              <v-card-title class="overline text-h6">{{ column3.title }}</v-card-title>
               <v-list dense color="transparent" width="auto">
                 <v-list-item
                   v-for="(item, index) in column3.items"
@@ -103,9 +89,7 @@
               </v-list>
             </v-col>
             <v-col cols="6" md="3">
-              <v-card-title class="overline text-h6">
-                {{ column4.title }}
-              </v-card-title>
+              <v-card-title class="overline text-h6">{{ column4.title }}</v-card-title>
               <v-list dense color="transparent" width="auto">
                 <v-list-item
                   v-for="(item, index) in column4.items"
@@ -125,10 +109,22 @@
             <v-btn fab x-large class="mx-4 primary" href="#" aria-label="instagram-vuety">
               <v-icon>mdi-instagram</v-icon>
             </v-btn>
-            <v-btn fab x-large class="mx-4 primary" href="https://www.facebook.com/vuetycom" aria-label="facebook-vuety">
+            <v-btn
+              fab
+              x-large
+              class="mx-4 primary"
+              href="https://www.facebook.com/vuetycom"
+              aria-label="facebook-vuety"
+            >
               <v-icon>mdi-facebook</v-icon>
             </v-btn>
-            <v-btn fab x-large class="mx-4 primary" href="#" aria-label="twitter-vuety">
+            <v-btn
+              fab
+              x-large
+              class="mx-4 primary"
+              href="https://twitter.com/vuetycom"
+              aria-label="twitter-vuety"
+            >
               <v-icon>mdi-twitter</v-icon>
             </v-btn>
           </v-row>

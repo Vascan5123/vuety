@@ -8,6 +8,8 @@
     <dividerThree id="dividerThreeid" />
     <price id="priceid" />
     <dividerFour id="dividerFourid" />
+    <contact id="contactid" />
+    <dividerFive id="dividerFiveid" />
     <about id="aboutid" />
     <footer1 id="footerid" />
     <v-btn
@@ -33,7 +35,9 @@ import dividerOne from "../components/svg/common/dividerOne.vue";
 import dividerTwo from "../components/svg/common/dividerTwo.vue";
 import dividerThree from "../components/svg/common/dividerThree.vue";
 import dividerFour from "../components/svg/common/dividerFour.vue";
+import dividerFive from "../components/svg/common/dividerFive.vue";
 import price from "../components/price.vue";
+import contact from "../components/contact.vue";
 
 export default {
   components: {
@@ -47,6 +51,8 @@ export default {
     dividerThree,
     price,
     dividerFour,
+    contact,
+    dividerFive
   },
   data() {
     return {

@@ -1,7 +1,7 @@
 <template>
-  <v-app>
+  <v-app :style="{background: $vuetify.theme.themes[theme].background}">
     <toolbar />
-    <v-main id="mainid" class="main grey lighten-5">
+    <v-main id="mainid" class="main">
       <nuxt />
     </v-main>
   </v-app>
@@ -20,6 +20,11 @@ export default {
   },
   mounted() {
   },
+  computed:{
+    theme(){
+      return (this.$vuetify.theme.dark) ? 'dark' : 'light'
+    }
+  }
 };
 </script>
 <style>

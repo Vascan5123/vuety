@@ -1,24 +1,13 @@
 <template>
   <div app>
-    <v-toolbar
-      absolute
-      flat
-      class="toolbar1 px-4 px-sm-16"
-      width="100%"
-      color="transparent"
-    >
-      <v-toolbar-title class="text-h5 font-weight-bold purple1--text title1" @click="$router.push('/')">
-        Delicious
-      </v-toolbar-title>
+    <v-toolbar absolute flat class="toolbar1 px-4 px-sm-16" width="100%" color="transparent">
+      <v-toolbar-title
+        class="text-h5 font-weight-bold purple1--text title1"
+        @click="$router.push('/')"
+      >Delicious</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn aria-label="open_driver_1" icon class="menusvg" @click="opendrawer()">
-        <svg
-          width="40"
-          height="28"
-          x="0px"
-          y="0px"
-          viewBox="0 0 640 480"
-        >
+        <svg width="40" height="28" x="0px" y="0px" viewBox="0 0 640 480">
           <g>
             <path
               fill="#512da8"
@@ -51,11 +40,12 @@
       width="100%"
       color="primary"
     >
-      <v-toolbar-title class="text-h5 font-weight-bold white--text title1" @click="$router.push('/')">
-        Delicious
-      </v-toolbar-title>
+      <v-toolbar-title
+        class="text-h5 font-weight-bold white--text title1"
+        @click="$router.push('/')"
+      >Delicious</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
+      <v-toolbar-items class="hidden-md-and-down">
         <v-btn
           v-for="(item, index) in items"
           :key="index"
@@ -67,14 +57,8 @@
           {{ item.title }}
         </v-btn>
       </v-toolbar-items>
-      <v-btn aria-label="open_driver_2" icon class="menusvg hidden-md-and-up" @click="opendrawer()">
-        <svg
-          width="40"
-          height="28"
-          x="0px"
-          y="0px"
-          viewBox="0 0 640 480"
-        >
+      <v-btn aria-label="open_driver_2" icon class="menusvg hidden-lg-and-up" @click="opendrawer()">
+        <svg width="40" height="28" x="0px" y="0px" viewBox="0 0 640 480">
           <g fill="#fff">
             <path
               class="st0"
@@ -93,15 +77,16 @@
       </v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer
-      app
-      v-model="drawer"
-      right
-      temporary
-      color="#685f99"
-      dark
-    >
+    <v-navigation-drawer app v-model="drawer" right temporary color="#685f99" dark>
       <v-list>
+        <v-list-item>
+          <v-list-item-icon>
+            <v-switch v-model="$vuetify.theme.dark"></v-switch>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title class="title">Dark theme</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
         <v-list-item
           v-for="item in items"
           :key="item.title"
@@ -114,9 +99,11 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title class="title">{{
+            <v-list-item-title class="title">
+              {{
               item.title
-            }}</v-list-item-title>
+              }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -157,11 +144,17 @@ export default {
         { title: "Home", icon: "mdi-home", link: "/#" },
         { title: "Our services", icon: "mdi-widgets", link: "/#secondpageid" },
         { title: "Technologies", icon: "mdi-nodejs", link: "/#thirdpageid" },
+        { title: "Price", icon: "mdi-cash-multiple", link: "/#priceid" },
+        {
+          title: "Get in Touch",
+          icon: "mdi-message-text",
+          link: "/#contactid",
+        },
         { title: "About us", icon: "mdi-account-multiple", link: "/#aboutid" },
       ],
     };
   },
-  mounted(){
+  mounted() {
     this.app_bar = true;
   },
   methods: {
@@ -173,7 +166,7 @@ export default {
 </script>
 
 <style scoped>
-.title1{
+.title1 {
   cursor: pointer;
 }
 .svg_drawer {

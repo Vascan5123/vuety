@@ -5,7 +5,7 @@
       class="title font-weight-regular py-8"
     >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</v-card-subtitle>
     <v-row justify="center">
-      <v-col cols="4">
+      <v-col cols="12" sm="6" md="4">
         <v-card rounded="xl" class="pa-5" outlined>
           <v-card-title class="display-1 font-weight-light text_top justify-center">Subscribe</v-card-title>
           <v-card-subtitle
@@ -15,7 +15,7 @@
           <v-btn elevation="2" rounded color="primary">Subscribe</v-btn>
         </v-card>
       </v-col>
-      <v-col cols="4">
+      <v-col cols="12" sm="6" md="4">
         <v-card rounded="xl" class="pa-5" outlined>
           <v-card-title class="display-1 font-weight-light text_top justify-center">Contact Us</v-card-title>
           <v-card-subtitle

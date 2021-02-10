@@ -25,7 +25,7 @@
               Parcel
             </v-btn>
           </v-row>
-          <v-tabs-items v-model="tab" class="mx-4 my-3 text-left">
+          <v-tabs-items v-model="tab" class="mx-4 my-3 text-left transparent">
             <v-tab-item>
               <v-card flat color="transparent">
                 <v-card-title

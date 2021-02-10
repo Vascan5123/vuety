@@ -53,6 +53,7 @@ export default {
     Disallow: '/user',
   },
 
+
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
@@ -67,6 +68,7 @@ export default {
           color_5: '#fff',
           accent: '#8c9eff',
           error: '#b71c1c',
+          background: "#fafafa"
         },
         dark: {
           primary: colors.blue.darken2,
@@ -75,7 +77,8 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+          success: colors.green.accent3,
+          background: "#1e1e1e"
         }
       }
     }

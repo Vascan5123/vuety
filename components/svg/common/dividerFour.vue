@@ -2,7 +2,7 @@
   <v-container fluid class="container_footer my-12">
     <v-parallax dark :height="height" src="/image1.png">
       <svg :width="`${width}%`" viewBox="0 0 1280 140" class="svg_white">
-        <g fill="#FAFAFA">
+        <g :class="{active_dark : $vuetify.theme.dark , active_light : !$vuetify.theme.dark}">
           <path d="M0 140h1280C573.08 140 0 0 0 0z" fill-opacity=".3" />
           <path d="M0 140h1280C573.08 140 0 30 0 30z" fill-opacity=".5" />
           <path d="M0 140h1280C573.08 140 0 60 0 60z" />
@@ -16,7 +16,7 @@
         </v-col>
       </v-row>
       <svg :width="`${width}%`" viewBox="0 0 1280 140" class="svg_white2">
-        <g fill="#FAFAFA">
+        <g :class="{active_dark : $vuetify.theme.dark , active_light : !$vuetify.theme.dark}">
           <path d="M0 140h1280C573.08 140 0 0 0 0z" fill-opacity=".3" />
           <path d="M0 140h1280C573.08 140 0 30 0 30z" fill-opacity=".5" />
           <path d="M0 140h1280C573.08 140 0 60 0 60z" />
@@ -54,6 +54,12 @@ export default {
 </script>
 
 <style scoped>
+.active_dark {
+  fill: #1e1e1e;
+}
+.active_light {
+  fill: #fafafa;
+}
 .text_2 {
   font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
   font-weight: 600;

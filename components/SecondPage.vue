@@ -97,7 +97,7 @@
         </v-card>
       </v-col>
       <v-col align-self="center" cols="12" sm="6" md="6">
-        <v-tabs-items v-model="tabs" class="grey lighten-5">
+        <v-tabs-items v-model="tabs" class="transparent">
           <v-tab-item class="no-transition">
             <v-card class="svg_img_enable" flat color="transparent">
               <v-col cols="12" md="10" lg="8" class="mx-auto">

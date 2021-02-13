@@ -11,9 +11,7 @@
               class="font-weight-bold mx-2 px-6"
               elevation="0"
               small
-            >
-              Food
-            </v-btn>
+            >Food</v-btn>
             <v-btn
               @click="tab = 1"
               :class="{ yelow: tab == 1 }"
@@ -21,32 +19,20 @@
               class="font-weight-bold px-6"
               elevation="0"
               small
-            >
-              Parcel
-            </v-btn>
+            >Parcel</v-btn>
           </v-row>
           <v-tabs-items v-model="tab" class="mx-4 my-3 text-left transparent">
             <v-tab-item>
               <v-card flat color="transparent">
                 <v-card-title
                   class="purple1--text text-h4 text-sm-h3 text_top font-weight-bold"
-                >
-                  That Means We Don't Just Deliver
-                </v-card-title>
+                >That Means We Don't Just Deliver</v-card-title>
                 <v-card-text class="text-body-1 font-weight-regular">
                   And it means this is delicious food you can enjoy everyday:
                   from vibrant salads for healthy office.
                 </v-card-text>
                 <v-card-actions>
-                  <v-btn
-                    outlined
-                    x-large
-                    rounded
-                    class="pa-7"
-                    color="yellow darken-3"
-                  >
-                    Learn More
-                  </v-btn>
+                  <v-btn outlined x-large rounded class="pa-7" color="yellow darken-3">Learn More</v-btn>
                 </v-card-actions>
               </v-card>
             </v-tab-item>
@@ -54,23 +40,13 @@
               <v-card flat color="transparent">
                 <v-card-title
                   class="purple1--text text-h4 text-sm-h3 text_top font-weight-bold"
-                >
-                  That Means We Don't Just Deliver
-                </v-card-title>
+                >That Means We Don't Just Deliver</v-card-title>
                 <v-card-text class="text-body-1 font-weight-regular">
                   And it means this is delicious food you can enjoy everyday:
                   from vibrant salads for healthy office.
                 </v-card-text>
                 <v-card-actions>
-                  <v-btn
-                    outlined
-                    x-large
-                    rounded
-                    class="pa-7"
-                    color="yellow darken-3"
-                  >
-                    Learn More
-                  </v-btn>
+                  <v-btn outlined x-large rounded class="pa-7" color="yellow darken-3">Learn More</v-btn>
                 </v-card-actions>
               </v-card>
             </v-tab-item>
@@ -91,10 +67,10 @@
       </v-btn>
     </v-col>
     <transition name="fade">
-    <indexSvgRightTop v-if="svg_1_active" />
+      <indexSvgRightTop v-if="svg_1_active" />
     </transition>
     <transition name="fade">
-    <indexSvgRight v-if="svg_2_active" />
+      <indexSvgRight v-if="svg_2_active" />
     </transition>
   </v-container>
 </template>
@@ -121,12 +97,14 @@ export default {
       this.svg_2_active = true;
     }
   },
+  methods: {},
 };
 </script>
 
 <style scoped>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .4s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.4s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
@@ -169,6 +147,9 @@ export default {
 }
 .text_top {
   word-break: keep-all;
+  font-family: "RooneySans-Regular", "Lucida Grande", "Lucida Sans Unicode",
+    "Trebuchet MS", sans-serif !important;
+  /* font-family: 'Raleway' !important; */
 }
 .contain_1 {
   position: relative;

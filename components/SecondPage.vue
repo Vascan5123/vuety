@@ -251,5 +251,6 @@ export default {
 }
 .text_top {
   word-break: keep-all;
+  /* font-family:'Raleway' !important; */
 }
 </style>

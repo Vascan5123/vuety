@@ -15,16 +15,23 @@ export default {
     toolbar,
   },
   data() {
-    return {
-    };
+    return {};
   },
   mounted() {
-  },
-  computed:{
-    theme(){
-      return (this.$vuetify.theme.dark) ? 'dark' : 'light'
+    const theme = localStorage.getItem("dark_theme");
+    if (theme) {
+        if (theme == "true") {
+            this.$vuetify.theme.dark = true;
+        } else {
+            this.$vuetify.theme.dark = false;
+        }
     }
-  }
+  },
+  computed: {
+    theme() {
+      return this.$vuetify.theme.dark ? "dark" : "light";
+    },
+  },
 };
 </script>
 <style>

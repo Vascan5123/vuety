@@ -71,9 +71,10 @@ export default {
           background: "#fafafa"
         },
         dark: {
-          primary: colors.blue.darken2,
+          primary: "#444444",
+          secondary: "#6F6F6F",
+          price_card: "#363636",
           accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,

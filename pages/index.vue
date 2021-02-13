@@ -1,6 +1,6 @@
 <template>
   <div>
-    <firstpage id="firstpage" />
+    <firstpage name="top" id="firstpage" />
     <DividerOne id="dividerOneid" />
     <secondpage id="secondpageid" />
     <dividerTwo id="dividerTwoid" />
@@ -15,7 +15,7 @@
     <v-btn
       :class="{ btn_scroll_open: scrollTop > 300 }"
       class="btn_top pa-7 white--text"
-      href="#mainid"
+      href="#top"
       icon
       elevation="8"
       aria-label="top"
@@ -52,7 +52,7 @@ export default {
     price,
     dividerFour,
     contact,
-    dividerFive
+    dividerFive,
   },
   data() {
     return {

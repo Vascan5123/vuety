@@ -6,8 +6,21 @@
         @click="$router.push('/')"
       >Delicious</v-toolbar-title>
       <v-spacer></v-spacer>
+
+      <v-btn
+        x-large
+        color="#512da8"
+        aria-label="btn_dark_theme"
+        class="mr-6"
+        icon
+        @click="setTheme()"
+      >
+        <!-- @click="$vuetify.theme.dark = !$vuetify.theme.dark" -->
+        <v-icon v-if="!$vuetify.theme.dark">mdi-weather-night</v-icon>
+        <v-icon v-else>mdi-white-balance-sunny</v-icon>
+      </v-btn>
       <v-btn aria-label="open_driver_1" icon class="menusvg" @click="opendrawer()">
-        <svg width="40" height="28" x="0px" y="0px" viewBox="0 0 640 480">
+        <svg width="38" x="0px" y="0px" viewBox="0 0 640 480">
           <g>
             <path
               fill="#512da8"
@@ -40,10 +53,10 @@
       width="100%"
       color="primary"
     >
-      <v-toolbar-title
-        class="text-h5 font-weight-bold white--text title1"
-        @click="$router.push('/')"
-      >Delicious</v-toolbar-title>
+      <v-toolbar-title class>
+        <v-btn class="ma-0 text-h5 font-weight-bold white--text title1" text href="#top">Delicious</v-btn>
+      </v-toolbar-title>
+
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-md-and-down">
         <v-btn
@@ -77,22 +90,21 @@
       </v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer app v-model="drawer" right temporary color="#685f99" dark>
+    <v-navigation-drawer app v-model="drawer" right temporary color="primary" dark>
       <v-list>
-        <v-list-item>
+        <!-- <v-list-item>
           <v-list-item-icon>
-            <v-switch v-model="$vuetify.theme.dark"></v-switch>
+            <v-switch v-model="$vuetify.theme.dark" inset></v-switch>
           </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title class="title">Dark theme</v-list-item-title>
           </v-list-item-content>
-        </v-list-item>
+        </v-list-item>-->
         <v-list-item
           v-for="item in items"
           :key="item.title"
           link
-          :href="item.link"
-          @click="drawer = false"
+          @click="drawer = false, goto(item.link)"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -158,8 +170,15 @@ export default {
     this.app_bar = true;
   },
   methods: {
+    setTheme() {
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+      localStorage.setItem("dark_theme", this.$vuetify.theme.dark.toString());
+    },
     opendrawer() {
       this.drawer = true;
+    },
+    goto(link) {
+      location.href = link;
     },
   },
 };
@@ -168,6 +187,7 @@ export default {
 <style scoped>
 .title1 {
   cursor: pointer;
+  text-transform: none;
 }
 .svg_drawer {
   z-index: -1;

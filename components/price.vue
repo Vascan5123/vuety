@@ -8,7 +8,7 @@
     </v-row>
     <v-row justify="center">
       <v-col cols="12" sm="4" md="4" lg="3" class="px-md-8">
-        <v-card class="rounded-xl py-4 py-md-8" outlined>
+        <v-card class="rounded-xl py-4 py-md-8" outlined color="price_card">
           <v-row class="ma-0" justify="center">
             <img width="50%" height="auto" src="../static/icons/bike.png" alt="bike" />
           </v-row>
@@ -22,7 +22,7 @@
               $
               <span class="display-2">49</span>
             </v-card-title>
-            <v-list class="px-3 px-md-8">
+            <v-list class="px-3 px-md-8" color="transparent">
               <v-list-item>
                 <v-list-item-title class="text_categories_price font-weight-bold">5 gb Linux</v-list-item-title>
               </v-list-item>
@@ -46,7 +46,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="4" md="4" lg="3" class="px-md-8">
-        <v-card class="rounded-xl py-4 py-md-8" outlined>
+        <v-card class="rounded-xl py-4 py-md-8" outlined color="price_card">
           <v-row class="ma-0" justify="center">
             <img width="50%" height="auto" src="../static/icons/scooter.png" alt="scooter" />
           </v-row>
@@ -60,7 +60,7 @@
               $
               <span class="display-2">49</span>
             </v-card-title>
-            <v-list class="px-3 px-md-8">
+            <v-list class="px-3 px-md-8" color="transparent">
               <v-list-item>
                 <v-list-item-title class="text_categories_price font-weight-bold">5 gb Linux</v-list-item-title>
               </v-list-item>
@@ -84,7 +84,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="4" md="4" lg="3" class="px-md-8">
-        <v-card class="rounded-xl py-4 py-md-8" outlined>
+        <v-card class="rounded-xl py-4 py-md-8" outlined color="price_card">
           <v-row class="ma-0" justify="center">
             <img width="50%" height="auto" src="../static/icons/car.png" alt="car" />
           </v-row>
@@ -98,7 +98,7 @@
               $
               <span class="display-2">49</span>
             </v-card-title>
-            <v-list class="px-3 px-md-8">
+            <v-list class="px-3 px-md-8" color="transparent">
               <v-list-item>
                 <v-list-item-title class="text_categories_price font-weight-bold">5 gb Linux</v-list-item-title>
               </v-list-item>
@@ -138,11 +138,11 @@ export default {};
   letter-spacing: 0.25rem !important;
 }
 .text_categories_price {
-  color: rgb(116, 116, 116) !important;
+  /* color: rgb(116, 116, 116) !important; */
   letter-spacing: 0.1rem !important;
 }
 .text_name_categories_price {
-  color: rgb(83, 83, 83) !important;
+  /* color: rgb(83, 83, 83) !important; */
   letter-spacing: 0.3rem !important;
 }
 </style>

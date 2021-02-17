@@ -1,6 +1,6 @@
 <template>
   <div>
-    <firstpage name="top" id="firstpage" />
+    <firstpage id="firstpageid" />
     <DividerOne id="dividerOneid" />
     <secondpage id="secondpageid" />
     <dividerTwo id="dividerTwoid" />
@@ -15,7 +15,7 @@
     <v-btn
       :class="{ btn_scroll_open: scrollTop > 300 }"
       class="btn_top pa-7 white--text"
-      href="#top"
+      @click="goto()"
       icon
       elevation="8"
       aria-label="top"
@@ -61,8 +61,16 @@ export default {
     };
   },
   methods: {
+    goto() {
+      /* location.href = link; */
+      window.scroll({
+        top: -document.getElementsByTagName("html")[0].offsetHeight,
+        behavior: "smooth",
+      });
+    },
     onScroll(e) {
       /* console.log(this.scrollTop) */
+      /* history.pushState({page: 1}) */
       this.scrollTop = e.target.documentElement.scrollTop;
     },
   },
@@ -72,7 +80,7 @@ export default {
       if (newHeight < 700) {
         newHeight = 700;
       }
-      document.getElementById("firstpage").style.height = `${newHeight}px`;
+      document.getElementById("firstpageid").style.height = `${newHeight}px`;
     }
     window.addEventListener("scroll", this.onScroll);
 
@@ -83,13 +91,13 @@ export default {
       } else if (newHeight > 701 && newHeight < 850) {
         newHeight = window.outerHeight;
       }
-      document.getElementById("firstpage").style.height = `${newHeight}px`;
+      document.getElementById("firstpageid").style.height = `${newHeight}px`;
     });
   },
 };
 </script>
 <style scoped>
-#firstpage {
+#firstpageid {
   width: 100vw;
   height: 100vh;
 }

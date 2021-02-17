@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="container_footer my-12">
-    <v-parallax dark :height="height" src="/image1.png">
+    <v-parallax :height="height" src="/image1.png">
       <svg :width="`${width}%`" viewBox="0 0 1280 140" class="svg_white">
         <g :class="{active_dark : $vuetify.theme.dark , active_light : !$vuetify.theme.dark}">
           <path d="M0 140h1280C573.08 140 0 0 0 0z" fill-opacity=".3" />
@@ -10,7 +10,7 @@
       </svg>
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12" md="7">
-          <v-card-title class="justify-center text-h4 text-sm-h3 text_2">
+          <v-card-title class="justify-center raleway font-weight-bold text_2">
             Ready To Make a Real Change? Let’s Build this Thing Together!
           </v-card-title>
         </v-col>
@@ -61,10 +61,18 @@ export default {
   fill: #fafafa;
 }
 .text_2 {
-  font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
-  font-weight: 600;
   line-height: 1.4em;
   word-break: keep-all !important;
+}
+@media (max-width: 605px) {
+  .text_2 {
+    font-size: 2rem !important;
+  }
+}
+@media (min-width: 606px) {
+  .text_2 {
+    font-size: 3rem !important;
+  }
 }
 .container_footer {
   background-image: linear-gradient(
@@ -77,7 +85,7 @@ export default {
 .svg_white {
   z-index: 1;
   position: relative;
-  top: -1px;
+  top: -2px;
   left: -16px;
   transform: rotateX(180deg);
   position: absolute;

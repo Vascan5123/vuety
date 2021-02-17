@@ -37,11 +37,11 @@
         </svg>
         <v-col cols="12" md="8" class="mx-auto">
           <v-col cols="12">
-            <v-card-title class="display-2 font-weight-light pa-0 text_top">Get started now</v-card-title>
+            <v-card-title class="font-weight-light pa-0 text_top raleway">Get started now</v-card-title>
           </v-col>
           <v-row no-gutters class="mt-12">
             <v-col cols="6" md="3">
-              <v-card-title class="overline text-h6">{{ column1.title }}</v-card-title>
+              <v-card-title class="overline title_categories raleway">{{ column1.title }}</v-card-title>
               <v-list dense color="transparent" width="auto">
                 <v-list-item
                   v-for="(item, index) in column1.items"
@@ -51,13 +51,13 @@
                 >
                   <v-list-item-title
                     v-text="item.name"
-                    class="text-subtitle-1 font-weight-light text_1"
+                    class="raleway font-weight-light text_1"
                   ></v-list-item-title>
                 </v-list-item>
               </v-list>
             </v-col>
             <v-col cols="6" md="3">
-              <v-card-title class="overline text-h6">{{ column2.title }}</v-card-title>
+              <v-card-title class="overline title_categories raleway">{{ column2.title }}</v-card-title>
               <v-list dense color="transparent" width="auto">
                 <v-list-item
                   v-for="(item, index) in column2.items"
@@ -67,13 +67,13 @@
                 >
                   <v-list-item-title
                     v-text="item.name"
-                    class="text-body-1 font-weight-light text_1"
+                    class="raleway font-weight-light text_1"
                   ></v-list-item-title>
                 </v-list-item>
               </v-list>
             </v-col>
             <v-col cols="6" md="3">
-              <v-card-title class="overline text-h6">{{ column3.title }}</v-card-title>
+              <v-card-title class="overline title_categories raleway">{{ column3.title }}</v-card-title>
               <v-list dense color="transparent" width="auto">
                 <v-list-item
                   v-for="(item, index) in column3.items"
@@ -83,13 +83,13 @@
                 >
                   <v-list-item-title
                     v-text="item.name"
-                    class="text-subtitle-1 font-weight-light text_1"
+                    class="raleway font-weight-light text_1"
                   ></v-list-item-title>
                 </v-list-item>
               </v-list>
             </v-col>
             <v-col cols="6" md="3">
-              <v-card-title class="overline text-h6">{{ column4.title }}</v-card-title>
+              <v-card-title class="overline title_categories raleway">{{ column4.title }}</v-card-title>
               <v-list dense color="transparent" width="auto">
                 <v-list-item
                   v-for="(item, index) in column4.items"
@@ -99,19 +99,27 @@
                 >
                   <v-list-item-title
                     v-text="item.name"
-                    class="text-subtitle-1 font-weight-light text_1"
+                    class="raleway font-weight-light text_1"
                   ></v-list-item-title>
                 </v-list-item>
               </v-list>
             </v-col>
           </v-row>
           <v-row no-gutters justify="center" class="mt-12">
-            <v-btn fab x-large class="mx-4 primary" href="#" aria-label="instagram-vuety">
+            <v-btn
+              fab
+              x-large
+              target="_blank"
+              class="mx-4 primary"
+              href="https://www.facebook.com/vuetycom"
+              aria-label="instagram-vuety"
+            >
               <v-icon>mdi-instagram</v-icon>
             </v-btn>
             <v-btn
               fab
               x-large
+              target="_blank"
               class="mx-4 primary"
               href="https://www.facebook.com/vuetycom"
               aria-label="facebook-vuety"
@@ -121,6 +129,7 @@
             <v-btn
               fab
               x-large
+              target="_blank"
               class="mx-4 primary"
               href="https://twitter.com/vuetycom"
               aria-label="twitter-vuety"
@@ -252,13 +261,20 @@ export default {
 }
 
 .text_1 {
+  font-size: 1rem !important;
   text-transform: capitalize !important;
   letter-spacing: 0.08rem !important;
   font-family: sans-serif !important;
 }
-
+.title_categories {
+  word-break: keep-all;
+  font-size: 1.1rem !important;
+  line-height: 2.125rem;
+}
 .text_top {
   word-break: keep-all;
+  font-size: 3rem;
+  line-height: 3.125rem;
 }
 
 .svg_footer {

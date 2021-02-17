@@ -2,9 +2,9 @@
   <div app>
     <v-toolbar absolute flat class="toolbar1 px-4 px-sm-16" width="100%" color="transparent">
       <v-toolbar-title
-        class="text-h5 font-weight-bold purple1--text title1"
+        class="purple1--text raleway font-weight-bold title1"
         @click="$router.push('/')"
-      >Delicious</v-toolbar-title>
+      >Vuety</v-toolbar-title>
       <v-spacer></v-spacer>
 
       <v-btn
@@ -19,7 +19,7 @@
         <v-icon v-if="!$vuetify.theme.dark">mdi-weather-night</v-icon>
         <v-icon v-else>mdi-white-balance-sunny</v-icon>
       </v-btn>
-      <v-btn aria-label="open_driver_1" icon class="menusvg" @click="opendrawer()">
+      <v-btn color="#512da8" aria-label="open_driver_1" icon class="menusvg" @click="opendrawer()">
         <svg width="38" x="0px" y="0px" viewBox="0 0 640 480">
           <g>
             <path
@@ -54,7 +54,7 @@
       color="primary"
     >
       <v-toolbar-title class>
-        <v-btn class="ma-0 text-h5 font-weight-bold white--text title1" text href="#top">Delicious</v-btn>
+        <v-btn class="ma-0 raleway font-weight-bold white--text title1" text href="#top">Vuety</v-btn>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -188,6 +188,8 @@ export default {
 .title1 {
   cursor: pointer;
   text-transform: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.06em
 }
 .svg_drawer {
   z-index: -1;

@@ -1,11 +1,11 @@
 <template>
   <v-container class="pt-15">
     <v-card flat color="transparent" class="mb-10">
-      <v-card-title class="justify-center text-center title1 display-2 font-weight-light">
-        Our Team Members
-      </v-card-title>
+      <v-card-title
+        class="justify-center text-center text_top raleway font-weight-light"
+      >Our Team Members</v-card-title>
       <v-col cols="11" md="8" class="mx-auto text-center pa-0">
-        <v-card-subtitle class="justify-center title font-weight-regular pa-0">
+        <v-card-subtitle class="justify-center text_top_subtitle raleway font-weight-regular pa-0">
           Authoritatively mesh intuitive paradigms vis-a-vis goal-oriented
           partnerships. Continually extend open-source outside the box thinking
           after focused catalysts.
@@ -14,89 +14,105 @@
     </v-card>
     <v-row justify="center">
       <v-col cols="6" sm="5" md="4" lg="3" xl="2">
-        <v-card elevation="3" class="text-center cards_about">
+        <v-card elevation="3" class="text-center cards_about" rounded="lg">
           <firstPerson />
-          <v-card class="ma-2" flat>
-            <v-card-title class="justify-center text_cards pt-0">
-              Robert Statham
-            </v-card-title>
-            <v-card-subtitle class="text-subtitle-2 text_cards">
-              Web Developer
-            </v-card-subtitle>
-            <v-card-text class="text-subtitle-2 text_cards pb-0">
-              Authoritatively engage leading-edge processes tactical capital
-            </v-card-text>
+          <v-card class="pa-2" flat>
+            <v-card-title class="justify-center text_cards pt-0 raleway">Robert Statham</v-card-title>
+            <v-card-subtitle class="text_cards raleway">Web Developer</v-card-subtitle>
+            <v-card-text
+              class="text_cards pb-0 raleway"
+            >Authoritatively engage leading-edge processes tactical capital</v-card-text>
             <v-card-actions class="justify-center">
-              <v-btn href="#" icon aria-label="facebook"><v-icon>mdi-facebook</v-icon></v-btn>
-              <v-btn href="#" icon aria-label="twitter"><v-icon>mdi-twitter</v-icon></v-btn>
-              <v-btn href="#" icon aria-label="github"><v-icon>mdi-github</v-icon></v-btn>
-              <v-btn href="#" icon aria-label="linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="facebook">
+                <v-icon>mdi-facebook</v-icon>
+              </v-btn>
+              <v-btn href="#" icon aria-label="twitter">
+                <v-icon>mdi-twitter</v-icon>
+              </v-btn>
+              <v-btn href="#" icon aria-label="github">
+                <v-icon>mdi-github</v-icon>
+              </v-btn>
+              <v-btn href="#" icon aria-label="linkedin">
+                <v-icon>mdi-linkedin</v-icon>
+              </v-btn>
             </v-card-actions>
           </v-card>
         </v-card>
       </v-col>
       <v-col cols="6" sm="5" md="4" lg="3" xl="2">
-        <v-card elevation="3" class="text-center cards_about">
+        <v-card elevation="3" class="text-center cards_about" rounded="lg">
           <secondPerson />
-          <v-card class="ma-2" flat>
-            <v-card-title class="justify-center text_cards pt-0">
-              Robert Statham
-            </v-card-title>
-            <v-card-subtitle class="text-subtitle-2 text_cards">
-              Web Developer
-            </v-card-subtitle>
-            <v-card-text class="text-subtitle-2 text_cards pb-0">
-              Authoritatively engage leading-edge processes tactical capital
-            </v-card-text>
+          <v-card class="pa-2" flat>
+            <v-card-title class="justify-center text_cards pt-0 raleway">Robert Statham</v-card-title>
+            <v-card-subtitle class="text_cards raleway">Web Developer</v-card-subtitle>
+            <v-card-text
+              class="text_cards pb-0 raleway"
+            >Authoritatively engage leading-edge processes tactical capital</v-card-text>
             <v-card-actions class="justify-center">
-              <v-btn href="#" icon aria-label="facebook"><v-icon>mdi-facebook</v-icon></v-btn>
-              <v-btn href="#" icon aria-label="twitter"><v-icon>mdi-twitter</v-icon></v-btn>
-              <v-btn href="#" icon aria-label="github"><v-icon>mdi-github</v-icon></v-btn>
-              <v-btn href="#" icon aria-label="linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="facebook">
+                <v-icon>mdi-facebook</v-icon>
+              </v-btn>
+              <v-btn href="#" icon aria-label="twitter">
+                <v-icon>mdi-twitter</v-icon>
+              </v-btn>
+              <v-btn href="#" icon aria-label="github">
+                <v-icon>mdi-github</v-icon>
+              </v-btn>
+              <v-btn href="#" icon aria-label="linkedin">
+                <v-icon>mdi-linkedin</v-icon>
+              </v-btn>
             </v-card-actions>
           </v-card>
         </v-card>
       </v-col>
       <v-col cols="6" sm="5" md="4" lg="3" xl="2">
-        <v-card elevation="3" class="text-center cards_about">
+        <v-card elevation="3" class="text-center cards_about" rounded="lg">
           <thirdPerson />
-          <v-card class="ma-2" flat>
-            <v-card-title class="justify-center text_cards pt-0">
-              Robert Statham
-            </v-card-title>
-            <v-card-subtitle class="text-subtitle-2 text_cards">
-              Web Developer
-            </v-card-subtitle>
-            <v-card-text class="text-subtitle-2 text_cards pb-0">
-              Authoritatively engage leading-edge processes tactical capital
-            </v-card-text>
+          <v-card class="pa-2" flat>
+            <v-card-title class="justify-center text_cards pt-0 raleway">Robert Statham</v-card-title>
+            <v-card-subtitle class="text_cards raleway">Web Developer</v-card-subtitle>
+            <v-card-text
+              class="text_cards pb-0 raleway"
+            >Authoritatively engage leading-edge processes tactical capital</v-card-text>
             <v-card-actions class="justify-center">
-              <v-btn href="#" icon aria-label="facebook"><v-icon>mdi-facebook</v-icon></v-btn>
-              <v-btn href="#" icon aria-label="twitter"><v-icon>mdi-twitter</v-icon></v-btn>
-              <v-btn href="#" icon aria-label="github"><v-icon>mdi-github</v-icon></v-btn>
-              <v-btn href="#" icon aria-label="linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="facebook">
+                <v-icon>mdi-facebook</v-icon>
+              </v-btn>
+              <v-btn href="#" icon aria-label="twitter">
+                <v-icon>mdi-twitter</v-icon>
+              </v-btn>
+              <v-btn href="#" icon aria-label="github">
+                <v-icon>mdi-github</v-icon>
+              </v-btn>
+              <v-btn href="#" icon aria-label="linkedin">
+                <v-icon>mdi-linkedin</v-icon>
+              </v-btn>
             </v-card-actions>
           </v-card>
         </v-card>
       </v-col>
       <v-col cols="6" sm="5" md="4" lg="3" xl="2">
-        <v-card elevation="3" class="text-center cards_about">
+        <v-card elevation="3" class="text-center cards_about" rounded="lg">
           <fourPerson />
-          <v-card class="ma-2" flat>
-            <v-card-title class="justify-center text_cards pt-0">
-              Robert Statham
-            </v-card-title>
-            <v-card-subtitle class="text-subtitle-2 text_cards">
-              Web Developer
-            </v-card-subtitle>
-            <v-card-text class="text-subtitle-2 text_cards pb-0">
-              Authoritatively engage leading-edge processes tactical capital
-            </v-card-text>
+          <v-card class="pa-2" flat>
+            <v-card-title class="justify-center text_cards pt-0 raleway">Robert Statham</v-card-title>
+            <v-card-subtitle class="text_cards raleway">Web Developer</v-card-subtitle>
+            <v-card-text
+              class="text_cards pb-0 raleway"
+            >Authoritatively engage leading-edge processes tactical capital</v-card-text>
             <v-card-actions class="justify-center">
-              <v-btn href="#" icon aria-label="facebook"><v-icon>mdi-facebook</v-icon></v-btn>
-              <v-btn href="#" icon aria-label="facebook"><v-icon>mdi-twitter</v-icon></v-btn>
-              <v-btn href="#" icon aria-label="facebook"><v-icon>mdi-github</v-icon></v-btn>
-              <v-btn href="#" icon aria-label="facebook"><v-icon>mdi-linkedin</v-icon></v-btn>
+              <v-btn href="#" icon aria-label="facebook">
+                <v-icon>mdi-facebook</v-icon>
+              </v-btn>
+              <v-btn href="#" icon aria-label="facebook">
+                <v-icon>mdi-twitter</v-icon>
+              </v-btn>
+              <v-btn href="#" icon aria-label="facebook">
+                <v-icon>mdi-github</v-icon>
+              </v-btn>
+              <v-btn href="#" icon aria-label="facebook">
+                <v-icon>mdi-linkedin</v-icon>
+              </v-btn>
             </v-card-actions>
           </v-card>
         </v-card>
@@ -124,35 +140,33 @@ export default {
 </script>
 
 <style scoped>
+.cards_about:hover {
+  transform: translate(0px, -20px);
+}
+.cards_about:hover > div {
+  background: #f5f5f5;
+}
 .cards_about {
   overflow: hidden;
+  transition: 0.2s;
 }
 @media (max-width: 500px) {
   .cards_about {
     zoom: 0.8;
   }
 }
-.title1 {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: normal;
-  line-break: strict;
-  hyphens: none;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  color: #0c1a35;
-}
-.title2 {
-  color: #696969;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: normal;
-  line-break: strict;
-  hyphens: none;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-}
 .text_cards {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+}
+.text_top_subtitle {
+  font-size: 1.25rem !important;
+  line-height: 2rem;
+  letter-spacing: 0.0125em !important;
+}
+.text_top {
+  word-break: keep-all;
+  font-size: 2.5rem;
+  line-height: 3.125rem;
 }
 </style>

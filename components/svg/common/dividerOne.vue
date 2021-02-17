@@ -11,7 +11,7 @@
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12" md="7">
           <v-card-title
-            class="justify-center text-h4 text-sm-h3 text_2"
+            class="justify-center raleway font-weight-bold text_2"
           >Ready To Make a Real Change? Let’s Build this Thing Together!</v-card-title>
         </v-col>
       </v-row>
@@ -28,9 +28,7 @@
 
 <script>
 export default {
-  mounted(){
-
-  },
+  mounted() {},
   computed: {
     height() {
       switch (this.$vuetify.breakpoint.name) {
@@ -76,10 +74,18 @@ export default {
   fill: #fafafa;
 }
 .text_2 {
-  font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
-  font-weight: 600;
   line-height: 1.4em;
   word-break: keep-all !important;
+}
+@media (max-width: 605px) {
+  .text_2 {
+    font-size: 2rem !important;
+  }
+}
+@media (min-width: 606px) {
+  .text_2 {
+    font-size: 3rem !important;
+  }
 }
 .container_footer {
   background-image: linear-gradient(
@@ -92,7 +98,7 @@ export default {
 .svg_white {
   z-index: 1;
   position: relative;
-  top: -1px;
+  top: -2px;
   left: -16px;
   transform: rotateX(180deg);
   position: absolute;
@@ -100,7 +106,7 @@ export default {
 .svg_white2 {
   z-index: 1;
   position: relative;
-  bottom: -1px;
+  bottom: -2px;
   right: -16px;
   transform: rotateY(-180deg);
   position: absolute;

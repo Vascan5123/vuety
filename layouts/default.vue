@@ -20,11 +20,11 @@ export default {
   mounted() {
     const theme = localStorage.getItem("dark_theme");
     if (theme) {
-        if (theme == "true") {
-            this.$vuetify.theme.dark = true;
-        } else {
-            this.$vuetify.theme.dark = false;
-        }
+      if (theme == "true") {
+        this.$vuetify.theme.dark = true;
+      } else {
+        this.$vuetify.theme.dark = false;
+      }
     }
   },
   computed: {

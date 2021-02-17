@@ -1,8 +1,7 @@
 <template>
-  <v-container class="text-center contain_1" fluid>
-    <v-col class="align-self-center align-self-lg-center">
-      <v-row justify="center">
-        <v-col cols="12" sm="10" md="6" lg="5" xl="4" class="col_1">
+  <v-container class="text-center contain_1 pa-0" fluid>
+      <v-row justify="center" justify-md="end" class="ma-0">
+        <v-col align-self="center" cols="12" sm="8" md="5" lg="5" xl="4 " class="col_1" order="1" order-md="0" offset="0">
           <v-row class="mx-4">
             <v-btn
               @click="tab = 0"
@@ -25,9 +24,9 @@
             <v-tab-item>
               <v-card flat color="transparent">
                 <v-card-title
-                  class="purple1--text text-h4 text-sm-h3 text_top font-weight-bold"
+                  class="raleway purple1--text font-weight-medium text_title"
                 >That Means We Don't Just Deliver</v-card-title>
-                <v-card-text class="text-body-1 font-weight-regular">
+                <v-card-text class="raleway text_subtitle font-weight-medium">
                   And it means this is delicious food you can enjoy everyday:
                   from vibrant salads for healthy office.
                 </v-card-text>
@@ -39,9 +38,9 @@
             <v-tab-item>
               <v-card flat color="transparent">
                 <v-card-title
-                  class="purple1--text text-h4 text-sm-h3 text_top font-weight-bold"
+                  class="raleway purple1--text font-weight-medium text_title"
                 >That Means We Don't Just Deliver</v-card-title>
-                <v-card-text class="text-body-1 font-weight-regular">
+                <v-card-text class="raleway text_subtitle font-weight-medium">
                   And it means this is delicious food you can enjoy everyday:
                   from vibrant salads for healthy office.
                 </v-card-text>
@@ -52,7 +51,9 @@
             </v-tab-item>
           </v-tabs-items>
         </v-col>
-        <v-col md="3" lg="6" class="d-none d-md-flex"></v-col>
+        <transition name="fade">
+          <indexSvgRight v-if="svg_2_active" />
+        </transition>
       </v-row>
       <v-btn
         class="btn_bottom d-none d-md-flex"
@@ -65,12 +66,8 @@
       >
         <v-icon>mdi-chevron-double-down</v-icon>
       </v-btn>
-    </v-col>
     <transition name="fade">
       <indexSvgRightTop v-if="svg_1_active" />
-    </transition>
-    <transition name="fade">
-      <indexSvgRight v-if="svg_2_active" />
     </transition>
   </v-container>
 </template>
@@ -110,6 +107,7 @@ export default {
   opacity: 0;
 }
 .btn_bottom {
+  z-index: 2;
   position: absolute;
   bottom: 3%;
   left: 50%;
@@ -128,16 +126,6 @@ export default {
   position: relative;
   z-index: 2;
 }
-@media (max-width: 760px) {
-  .col_1 {
-    top: 150px;
-  }
-}
-@media (min-width: 761px) and (max-width: 1200px) {
-  .col_1 {
-    top: 230px;
-  }
-}
 .theme--light.v-tabs-items {
   background: transparent !important;
 }
@@ -147,13 +135,34 @@ export default {
 }
 .text_top {
   word-break: keep-all;
-  font-family: "RooneySans-Regular", "Lucida Grande", "Lucida Sans Unicode",
-    "Trebuchet MS", sans-serif !important;
-  /* font-family: 'Raleway' !important; */
 }
 .contain_1 {
   position: relative;
   z-index: 1;
   display: flex;
+}
+.text_subtitle {
+  line-height: 1.5em;
+  word-break: keep-all !important;
+}
+.text_title {
+  line-height: 1.3em;
+  word-break: keep-all !important;
+}
+@media (max-width: 500px) {
+  .text_title {
+    font-size: 2rem !important;
+  }
+  .text_subtitle {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width: 501px) {
+  .text_title {
+    font-size: 3rem !important;
+  }
+  .text_subtitle {
+    font-size: 1.2rem !important;
+  }
 }
 </style>

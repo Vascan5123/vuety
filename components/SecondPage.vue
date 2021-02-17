@@ -14,7 +14,7 @@
             <v-row class="text-center px-xl-15">
               <v-col cols="6" lg="5" class="pa-lg-5">
                 <v-card
-                  :color="blockNumber == 0 ? 'indigo' : undefined"
+                  :color="blockNumber == 0 ? '#EF58A4' : undefined"
                   :dark="blockNumber == 0 ? 'dark' : undefined"
                   class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg"
                   elevation="3"
@@ -33,7 +33,7 @@
               </v-col>
               <v-col cols="6" lg="5" class="pa-lg-5">
                 <v-card
-                  :color="blockNumber == 1 ? 'indigo' : undefined"
+                  :color="blockNumber == 1 ? '#EF58A4' : undefined"
                   :dark="blockNumber == 1 ? 'dark' : undefined"
                   class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg"
                   elevation="3"
@@ -50,7 +50,7 @@
               </v-col>
               <v-col cols="6" lg="5" class="pa-lg-5">
                 <v-card
-                  :color="blockNumber == 2 ? 'indigo' : undefined"
+                  :color="blockNumber == 2 ? '#EF58A4' : undefined"
                   :dark="blockNumber == 2 ? 'dark' : undefined"
                   class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg"
                   elevation="3"
@@ -67,7 +67,7 @@
               </v-col>
               <v-col cols="6" lg="5" class="pa-lg-5">
                 <v-card
-                  :color="blockNumber == 3 ? 'indigo' : undefined"
+                  :color="blockNumber == 3 ? '#EF58A4' : undefined"
                   :dark="blockNumber == 3 ? 'dark' : undefined"
                   class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg"
                   elevation="3"

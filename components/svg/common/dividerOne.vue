@@ -88,11 +88,7 @@ export default {
   }
 }
 .container_footer {
-  background-image: linear-gradient(
-    130deg,
-    #8624e1 25%,
-    #3607a6 100%
-  ) !important;
+  background: linear-gradient(#EA54AD, #8A5CC0) !important;
   padding: 0px;
 }
 .svg_white {

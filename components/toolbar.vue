@@ -90,7 +90,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer app v-model="drawer" right temporary color="primary" dark>
+    <v-navigation-drawer app v-model="drawer" right temporary class="drawer" dark>
       <v-list>
         <!-- <v-list-item>
           <v-list-item-icon>
@@ -153,7 +153,7 @@ export default {
       app_bar: false,
       drawer: false,
       items: [
-        { title: "Home", icon: "mdi-home", link: "/#" },
+        { title: "Home", icon: "mdi-home", link: "/#top" },
         { title: "Our services", icon: "mdi-widgets", link: "/#secondpageid" },
         { title: "Technologies", icon: "mdi-nodejs", link: "/#thirdpageid" },
         { title: "Price", icon: "mdi-cash-multiple", link: "/#priceid" },
@@ -185,6 +185,9 @@ export default {
 </script>
 
 <style scoped>
+.drawer{
+  background: linear-gradient(#8A5CC0, #E754AE) !important;
+}
 .title1 {
   cursor: pointer;
   text-transform: none;

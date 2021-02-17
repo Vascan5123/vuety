@@ -31,7 +31,7 @@
                   from vibrant salads for healthy office.
                 </v-card-text>
                 <v-card-actions>
-                  <v-btn outlined x-large rounded class="pa-7" color="yellow darken-3">Learn More</v-btn>
+                  <v-btn outlined x-large rounded class="pa-7" color="#8A5CC0">Learn More</v-btn>
                 </v-card-actions>
               </v-card>
             </v-tab-item>
@@ -45,7 +45,7 @@
                   from vibrant salads for healthy office.
                 </v-card-text>
                 <v-card-actions>
-                  <v-btn outlined x-large rounded class="pa-7" color="yellow darken-3">Learn More</v-btn>
+                  <v-btn outlined x-large rounded class="pa-7" color="#8A5CC0">Learn More</v-btn>
                 </v-card-actions>
               </v-card>
             </v-tab-item>
@@ -60,7 +60,7 @@
         href="#secondpageid"
         icon
         x-large
-        color="#685f99"
+        color="#8A5CC0"
         elevation="2"
         aria-label="bottom"
       >
@@ -130,7 +130,7 @@ export default {
   background: transparent !important;
 }
 .yelow {
-  background-color: #ffad23 !important;
+  background-color: #C957B3 !important;
   color: white !important;
 }
 .text_top {

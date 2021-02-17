@@ -15,9 +15,6 @@
       <g filter="url(#filter1_d_secondperson)">
         <circle cx="288" cy="38" r="13" fill="#EFBEBE" />
       </g>
-      <g filter="url(#filter2_d_secondperson)">
-        <circle cx="126" cy="128" r="9" fill="white" />
-      </g>
       <path
         d="M29 1C39.0345 18.3835 57.2251 30 78 30C98.7749 30 116.965 18.3835 127 1"
         stroke="white"

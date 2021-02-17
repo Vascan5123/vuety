@@ -114,6 +114,6 @@ export default {
   position: fixed;
   bottom: -80px;
   right: 5%;
-  background: #3f51b5 !important;
+  background: #8A5CC0 !important;
 }
 </style>

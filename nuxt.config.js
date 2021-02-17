@@ -64,7 +64,7 @@ export default {
       light: true,
       themes: {
         light: {
-          primary: '#685f99',
+          primary: '#8A5CC0',
           secondary: '#efbebe',
           purple1: '#512DA8',
           color_4: '#fff',

@@ -9,7 +9,7 @@
       <g filter="url(#filter0_d_fourperson)">
         <path
           d="M3.99995 262.167C56.2138 268.627 107.298 269.807 156.762 261.23C214.664 251.167 270.271 227.254 319 193.61V-6.12508e-06L3.99994 -3.05176e-05L3.99995 262.167Z"
-          fill="#685F99"
+          fill="url(#Gradient_person_4)"
         />
       </g>
       <path
@@ -18,10 +18,10 @@
         stroke-width="2"
       />
       <g filter="url(#filter1_d_fourperson)">
-        <circle cx="250" cy="187" r="13" fill="#EFBEBE" />
+        <circle cx="250" cy="187" r="13" fill="#8A5CC0" />
       </g>
       <g filter="url(#filter2_d_fourperson)">
-        <circle cx="72" cy="60" r="13" fill="#EFBEBE" />
+        <circle cx="72" cy="60" r="13" fill="#8A5CC0" />
       </g>
       <g filter="url(#filter3_d_fourperson)">
         <circle cx="47.5" cy="201.5" r="11.5" fill="white" />
@@ -278,8 +278,12 @@
           fill="#423A38"
         />
       </svg>
-
       <defs>
+        <linearGradient id="Gradient_person_4" x1="0" x2="0.15" y1="0" y2="1">
+          <stop offset="0%" stop-color="#BC58B6" />
+          <stop offset="70%" stop-color="#FF648A" />
+          <stop offset="100%" stop-color="#FF648A" />
+        </linearGradient>
         <filter
           id="filter0_d_fourperson"
           x="-6.10352e-05"

@@ -2,14 +2,15 @@
   <div app>
     <v-toolbar absolute flat class="toolbar1 px-4 px-sm-16" width="100%" color="transparent">
       <v-toolbar-title
-        class="purple1--text raleway font-weight-bold title1"
+        :class="$vuetify.theme.dark ? 'title1_dark' : 'purple_light--text'"
+        class="raleway font-weight-bold title1"
         @click="$router.push('/')"
       >Vuety</v-toolbar-title>
       <v-spacer></v-spacer>
 
       <v-btn
         x-large
-        color="#512da8"
+        :color="$vuetify.theme.dark ? '#EA54AD' : '#512da8'"
         aria-label="btn_dark_theme"
         class="mr-6"
         icon
@@ -19,25 +20,19 @@
         <v-icon v-if="!$vuetify.theme.dark">mdi-weather-night</v-icon>
         <v-icon v-else>mdi-white-balance-sunny</v-icon>
       </v-btn>
-      <v-btn color="#512da8" aria-label="open_driver_1" icon class="menusvg" @click="opendrawer()">
+      <v-btn :color="$vuetify.theme.dark ? '#EA54AD' : '#512da8'" aria-label="open_driver_1" icon class="menusvg" @click="opendrawer()">
         <svg width="38" x="0px" y="0px" viewBox="0 0 640 480">
-          <g>
+          <g :fill="$vuetify.theme.dark ? '#EA54AD' : '#512da8'">
             <path
-              fill="#512da8"
+              
               class="st0"
               d="M51,271.5c-16.3,0-29.5-13.2-29.5-29.5v-5c0-16.3,13.2-29.5,29.5-29.5h540c16.3,0,29.5,13.2,29.5,29.5v5c0,16.3-13.2,29.5-29.5,29.5H51z"
             />
-          </g>
-          <g>
             <path
-              fill="#512da8"
               class="menutop"
               d="M331,98.5c-16.3,0-29.5-13.2-29.5-29.5v-5c0-16.3,13.2-29.5,29.5-29.5h260c16.3,0,29.5,13.2,29.5,29.5v5c0,16.3-13.2,29.5-29.5,29.5H331z"
             />
-          </g>
-          <g>
             <path
-              fill="#512da8"
               class="menubottom"
               d="M51,444.5c-16.3,0-29.5-13.2-29.5-29.5v-5c0-16.3,13.2-29.5,29.5-29.5h260c16.3,0,29.5,13.2,29.5,29.5v5c0,16.3-13.2,29.5-29.5,29.5H51z"
             />
@@ -185,14 +180,17 @@ export default {
 </script>
 
 <style scoped>
-.drawer{
-  background: linear-gradient(#8A5CC0, #E754AE) !important;
+.drawer {
+  background: linear-gradient(#8a5cc0, #e754ae) !important;
+}
+.title1_dark {
+  color: #512DA8;
 }
 .title1 {
   cursor: pointer;
   text-transform: none;
   font-size: 1.5rem;
-  letter-spacing: 0.06em
+  letter-spacing: 0.06em;
 }
 .svg_drawer {
   z-index: -1;

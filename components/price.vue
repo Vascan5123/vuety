@@ -17,7 +17,7 @@
               class="headline font-weight-regular text-uppercase text_name_categories_price justify-center"
             >Basic</v-card-title>
             <v-card-title
-              class="headline font-weight-black text-uppercase text_price justify-center primary--text"
+              class="headline font-weight-black text-uppercase text_price justify-center secondary--text"
             >
               $
               <span class="display-2">49</span>
@@ -60,7 +60,7 @@
               class="headline font-weight-regular text-uppercase text_name_categories_price justify-center"
             >Pro</v-card-title>
             <v-card-title
-              class="headline font-weight-black text-uppercase text_price justify-center primary--text"
+              class="headline font-weight-black text-uppercase text_price justify-center secondary--text"
             >
               $
               <span class="display-2">99</span>
@@ -103,7 +103,7 @@
               class="headline font-weight-regular text-uppercase text_name_categories_price justify-center"
             >Gold</v-card-title>
             <v-card-title
-              class="headline font-weight-black text-uppercase text_price justify-center primary--text"
+              class="headline font-weight-black text-uppercase text_price justify-center secondary--text"
             >
               $
               <span class="display-2">199</span>

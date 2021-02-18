@@ -1,4 +1,14 @@
   
+:fill="$vuetify.theme.dark ? '#EA54AD' : 'white'"
+
+:fill="$vuetify.theme.dark ? '#444444' : '#F1F1F4'"
+
+  /* background: linear-gradient(90deg, #f92c8b 0%, #b02cd6 100%); */
+
+
+
+
+
 .title1 {
   overflow-wrap: break-word;
   word-wrap: break-word;

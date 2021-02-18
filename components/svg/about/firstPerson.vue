@@ -1,22 +1,17 @@
 <template>
   <div>
-    <svg
-      width="103%"
-      viewBox="4 0 321 300"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg width="103%" viewBox="4 0 321 300" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g filter="url(#filter0_d_firstperson)">
         <path
           d="M130.483 186.498C73.3997 154.718 40.2584 84.5511 18.6448 -1.39531e-06L317 -3.05176e-05V206.424C242.791 213.47 178.24 213.18 130.483 186.498Z"
-          fill="#685F99"
+          fill="url(#Gradient_person_1)"
         />
       </g>
       <g filter="url(#filter1_d_firstperson)">
-        <circle cx="45.5" cy="14.5" r="8.5" fill="#EFBEBE" />
+        <circle cx="45.5" cy="14.5" r="8.5" fill="#FF906A" />
       </g>
       <g filter="url(#filter3_d_firstperson)">
-        <circle cx="71.5" cy="40.5" r="12.5" fill="#EFBEBE" />
+        <circle cx="71.5" cy="40.5" r="12.5" fill="#FF906A" />
       </g>
       <g filter="url(#filter4_d_firstperson)">
         <circle cx="297" cy="178" r="9" fill="white" />
@@ -221,18 +216,8 @@
           d="M135.144 146.232C129.129 153.672 125.448 163.214 124.558 175.455C123.143 194.906 121.266 210.152 119.079 221.596L113.287 278.873C113.106 280.663 111.504 282.023 109.593 282.023C107.596 282.023 105.962 280.553 105.876 278.693L104.558 248.543C100.69 246.636 96.7836 238.927 93.2436 226.476C93.0484 225.789 92.7177 224.645 92.2855 223.149L92.2844 223.145C89.0344 211.894 80.0538 180.806 79.8442 175.455C79.8442 15.1777 254.668 -37.4766 318.668 26.5239C319.385 27.1076 320.084 27.7014 320.765 28.3048C362.264 27.426 432.35 63.1593 436.168 164.524C417.615 296.457 402.397 228.58 394.368 184.217C391.23 129.385 352.174 86.7113 320.636 104.184C312.377 110.674 301.354 115.634 287.494 118.13C266.937 130.567 226.224 138.232 210.668 141.024C208.819 141.356 206.544 141.804 203.935 142.319L203.931 142.32L203.93 142.32C186.548 145.747 154.384 152.089 135.144 146.232Z"
           fill="#A89156"
         />
-        <path
-          d="M323.668 265.023V266.023"
-          stroke="black"
-          stroke-width="24"
-          stroke-linecap="round"
-        />
-        <path
-          d="M194.668 265.023V266.023"
-          stroke="black"
-          stroke-width="24"
-          stroke-linecap="round"
-        />
+        <path d="M323.668 265.023V266.023" stroke="black" stroke-width="24" stroke-linecap="round" />
+        <path d="M194.668 265.023V266.023" stroke="black" stroke-width="24" stroke-linecap="round" />
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
@@ -267,6 +252,10 @@
         />
       </svg>
       <defs>
+        <linearGradient id="Gradient_person_1" x1="0" x2="0.15" y1="0" y2="1">
+          <stop offset="0%" stop-color="#8A5CC0" />
+          <stop offset="100%" stop-color="#E854AD" />
+        </linearGradient>
         <filter
           id="filter0_d_firstperson"
           x="14.6448"
@@ -284,21 +273,9 @@
           />
           <feOffset dy="4" />
           <feGaussianBlur stdDeviation="2" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow"
-            result="shape"
-          />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
         </filter>
         <filter
           id="filter1_d_firstperson"
@@ -317,21 +294,9 @@
           />
           <feOffset dy="4" />
           <feGaussianBlur stdDeviation="2" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow"
-            result="shape"
-          />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
         </filter>
         <filter
           id="filter3_d_firstperson"
@@ -350,21 +315,9 @@
           />
           <feOffset dy="4" />
           <feGaussianBlur stdDeviation="2" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow"
-            result="shape"
-          />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
         </filter>
         <filter
           id="filter4_d_firstperson"
@@ -383,21 +336,9 @@
           />
           <feOffset dy="4" />
           <feGaussianBlur stdDeviation="2" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow"
-            result="shape"
-          />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
         </filter>
       </defs>
     </svg>

@@ -9,11 +9,11 @@
       <g filter="url(#filter0_d_secondperson)">
         <path
           d="M3.99999 204.363C88.858 194.512 183.932 179.653 279.758 185.058C292.165 185.805 304.581 186.884 317 188.244L317 2.00006L3.99995 2.00003L3.99999 204.363Z"
-          fill="#685F99"
+          fill="url(#Gradient_person_2)"
         />
       </g>
       <g filter="url(#filter1_d_secondperson)">
-        <circle cx="288" cy="38" r="13" fill="#EFBEBE" />
+        <circle cx="288" cy="38" r="13" fill="#FF648A" />
       </g>
       <path
         d="M29 1C39.0345 18.3835 57.2251 30 78 30C98.7749 30 116.965 18.3835 127 1"
@@ -287,6 +287,10 @@
       </svg>
 
       <defs>
+        <linearGradient id="Gradient_person_2" x1="0" x2="0.15" y1="0" y2="1">
+          <stop offset="0%" stop-color="#8A5CC0" />
+          <stop offset="100%" stop-color="#EA54AD" />
+        </linearGradient>
         <filter
           id="filter0_d_secondperson"
           x="-4.57764e-05"

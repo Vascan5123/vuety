@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="container_footer my-12">
+  <v-container fluid :class="$vuetify.theme.dark ? 'container_footer_dark' : 'container_footer'" class=" my-12">
     <v-parallax :height="height" src="/image1.png">
       <svg :width="`${width}%`" viewBox="0 0 1280 140" class="svg_white">
         <g :class="{active_dark : $vuetify.theme.dark , active_light : !$vuetify.theme.dark}">
@@ -76,6 +76,10 @@ export default {
 }
 .container_footer {
   background: linear-gradient(#EA54AD, #8A5CC0) !important;
+  padding: 0px;
+}
+.container_footer_dark {
+  background: #444444 !important;
   padding: 0px;
 }
 .svg_white {

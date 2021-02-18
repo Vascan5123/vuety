@@ -61,27 +61,19 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      light: true,
       themes: {
         light: {
           primary: '#8A5CC0',
-          secondary: '#efbebe',
-          purple1: '#512DA8',
-          color_4: '#fff',
-          color_5: '#fff',
-          accent: '#8c9eff',
-          error: '#b71c1c',
+          secondary: '#FF648A',
+          purple_light: '#512DA8',
           background: "#fafafa"
         },
         dark: {
           primary: "#444444",
           secondary: "#6F6F6F",
+          third: "#8A5CC0",
           price_card: "#363636",
-          accent: colors.grey.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
+          purple_dark: '#CDCDCD',
           background: "#1e1e1e"
         }
       }

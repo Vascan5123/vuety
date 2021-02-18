@@ -77,22 +77,24 @@ export default {
   mounted() {
     if (process.browser) {
       var newHeight = window.innerHeight;
+      var newWidth = window.innerHeight;
       if (newHeight < 700) {
         newHeight = 700;
       }
       document.getElementById("firstpageid").style.height = `${newHeight}px`;
-    }
-    window.addEventListener("scroll", this.onScroll);
+      window.addEventListener("scroll", this.onScroll);
 
-    window.addEventListener("resize", function () {
-      newHeight = window.innerHeight;
-      if (newHeight < 700) {
-        newHeight = 700;
-      } else if (newHeight > 701 && newHeight < 850) {
-        newHeight = window.outerHeight;
-      }
-      document.getElementById("firstpageid").style.height = `${newHeight}px`;
-    });
+      window.addEventListener("resize", function () {
+        newHeight = window.innerHeight;
+        newWidth = window.innerHeight;
+        if (newHeight < 700 && newWidth < 600) {
+          newHeight = 700;
+        } else if (newHeight > 701 && newHeight < 850) {
+          newHeight = window.outerHeight;
+        }
+        document.getElementById("firstpageid").style.height = `${newHeight}px`;
+      });
+    }
   },
 };
 </script>
@@ -114,6 +116,6 @@ export default {
   position: fixed;
   bottom: -80px;
   right: 5%;
-  background: #8A5CC0 !important;
+  background: #8a5cc0 !important;
 }
 </style>

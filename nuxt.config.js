@@ -69,10 +69,8 @@ export default {
           background: "#fafafa"
         },
         dark: {
-          primary: "#444444",
-          secondary: "#6F6F6F",
-          third: "#8A5CC0",
-          price_card: "#363636",
+          primary: '#8A5CC0',
+          secondary: '#FF648A',
           purple_dark: '#CDCDCD',
           background: "#1e1e1e"
         }

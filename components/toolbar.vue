@@ -20,11 +20,16 @@
         <v-icon v-if="!$vuetify.theme.dark">mdi-weather-night</v-icon>
         <v-icon v-else>mdi-white-balance-sunny</v-icon>
       </v-btn>
-      <v-btn :color="$vuetify.theme.dark ? '#EA54AD' : '#512da8'" aria-label="open_driver_1" icon class="menusvg" @click="opendrawer()">
+      <v-btn
+        :color="$vuetify.theme.dark ? '#EA54AD' : '#512da8'"
+        aria-label="open_driver_1"
+        icon
+        class="menusvg"
+        @click="opendrawer()"
+      >
         <svg width="38" x="0px" y="0px" viewBox="0 0 640 480">
           <g :fill="$vuetify.theme.dark ? '#EA54AD' : '#512da8'">
             <path
-              
               class="st0"
               d="M51,271.5c-16.3,0-29.5-13.2-29.5-29.5v-5c0-16.3,13.2-29.5,29.5-29.5h540c16.3,0,29.5,13.2,29.5,29.5v5c0,16.3-13.2,29.5-29.5,29.5H51z"
             />
@@ -85,16 +90,15 @@
       </v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer app v-model="drawer" right temporary class="drawer" dark>
+    <v-navigation-drawer
+      app
+      v-model="drawer"
+      right
+      temporary
+      :class="$vuetify.theme.dark ? 'drawer_dark' : 'drawer'"
+      dark
+    >
       <v-list>
-        <!-- <v-list-item>
-          <v-list-item-icon>
-            <v-switch v-model="$vuetify.theme.dark" inset></v-switch>
-          </v-list-item-icon>
-          <v-list-item-content>
-            <v-list-item-title class="title">Dark theme</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>-->
         <v-list-item
           v-for="item in items"
           :key="item.title"
@@ -106,7 +110,7 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title class="title">
+            <v-list-item-title class="raleway font-weight-bold">
               {{
               item.title
               }}
@@ -183,8 +187,11 @@ export default {
 .drawer {
   background: linear-gradient(#8a5cc0, #e754ae) !important;
 }
+.drawer_dark {
+  background: #1e1e1e !important;
+}
 .title1_dark {
-  color: #512DA8;
+  color: #512da8;
 }
 .title1 {
   cursor: pointer;

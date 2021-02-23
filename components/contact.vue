@@ -1,12 +1,20 @@
 <template>
   <v-container class="text-center px-md-10 py-10" fluid>
-    <v-card-title class="font-weight-light text_top justify-center raleway">Get in Touch</v-card-title>
+    <v-card-title
+      class="font-weight-light text_top justify-center raleway"
+      :class="$vuetify.theme.dark ? 'text_top_dark' : ''"
+    >Get in Touch</v-card-title>
     <v-card-subtitle
       class="text_top_subtitle raleway font-weight-regular py-8"
     >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</v-card-subtitle>
     <v-row justify="center">
       <v-col cols="12" sm="6" md="4">
-        <v-card rounded="lg" class="pa-6" elevation="3">
+        <v-card
+          rounded="lg"
+          class="pa-6"
+          elevation="3"
+          :class="$vuetify.theme.dark ? 'contact_card_dark' : ''"
+        >
           <v-card-title
             class="font-weight-regular raleway text_title_cards justify-center"
           >Subscribe</v-card-title>
@@ -18,7 +26,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="4">
-        <v-card rounded="lg" class="pa-6" elevation="3">
+        <v-card rounded="lg" class="pa-6" elevation="3" :class="$vuetify.theme.dark ? 'contact_card_dark' : ''">
           <v-card-title
             class="font-weight-regular raleway text_title_cards justify-center"
           >Contact Us</v-card-title>
@@ -39,6 +47,9 @@ export default {};
 </script>
 
 <style scoped>
+.contact_card_dark {
+  background: #363636 !important;
+}
 .text_top_subtitle {
   font-size: 1.25rem !important;
   line-height: 2rem;
@@ -57,5 +68,8 @@ export default {};
   word-break: keep-all;
   font-size: 2.5rem;
   line-height: 3.125rem;
+}
+.text_top_dark {
+  color: #7650a1 !important;
 }
 </style>

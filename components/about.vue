@@ -14,9 +14,14 @@
     </v-card>
     <v-row justify="center">
       <v-col cols="6" sm="5" md="4" lg="3" xl="2">
-        <v-card elevation="3" class="text-center cards_about" rounded="lg">
+        <v-card
+          elevation="3"
+          class="text-center cards_about"
+          rounded="lg"
+          :class="$vuetify.theme.dark ? 'about_card_dark' : ''"
+        >
           <firstPerson />
-          <v-card class="pa-2" flat>
+          <v-card class="pa-2" flat color="transparent">
             <v-card-title class="justify-center text_cards pt-0 raleway">Robert Statham</v-card-title>
             <v-card-subtitle class="text_cards raleway">Web Developer</v-card-subtitle>
             <v-card-text
@@ -40,9 +45,14 @@
         </v-card>
       </v-col>
       <v-col cols="6" sm="5" md="4" lg="3" xl="2">
-        <v-card elevation="3" class="text-center cards_about" rounded="lg">
+        <v-card
+          elevation="3"
+          class="text-center cards_about"
+          rounded="lg"
+          :class="$vuetify.theme.dark ? 'about_card_dark' : ''"
+        >
           <secondPerson />
-          <v-card class="pa-2" flat>
+          <v-card class="pa-2" flat color="transparent">
             <v-card-title class="justify-center text_cards pt-0 raleway">Robert Statham</v-card-title>
             <v-card-subtitle class="text_cards raleway">Web Developer</v-card-subtitle>
             <v-card-text
@@ -66,9 +76,14 @@
         </v-card>
       </v-col>
       <v-col cols="6" sm="5" md="4" lg="3" xl="2">
-        <v-card elevation="3" class="text-center cards_about" rounded="lg">
+        <v-card
+          elevation="3"
+          class="text-center cards_about"
+          rounded="lg"
+          :class="$vuetify.theme.dark ? 'about_card_dark' : ''"
+        >
           <thirdPerson />
-          <v-card class="pa-2" flat>
+          <v-card class="pa-2" flat color="transparent">
             <v-card-title class="justify-center text_cards pt-0 raleway">Robert Statham</v-card-title>
             <v-card-subtitle class="text_cards raleway">Web Developer</v-card-subtitle>
             <v-card-text
@@ -92,9 +107,14 @@
         </v-card>
       </v-col>
       <v-col cols="6" sm="5" md="4" lg="3" xl="2">
-        <v-card elevation="3" class="text-center cards_about" rounded="lg">
+        <v-card
+          elevation="3"
+          class="text-center cards_about"
+          rounded="lg"
+          :class="$vuetify.theme.dark ? 'about_card_dark' : ''"
+        >
           <fourPerson />
-          <v-card class="pa-2" flat>
+          <v-card class="pa-2" flat color="transparent">
             <v-card-title class="justify-center text_cards pt-0 raleway">Robert Statham</v-card-title>
             <v-card-subtitle class="text_cards raleway">Web Developer</v-card-subtitle>
             <v-card-text
@@ -140,11 +160,14 @@ export default {
 </script>
 
 <style scoped>
+.about_card_dark {
+  background: #363636 !important;
+}
 .cards_about:hover {
   transform: translate(0px, -20px);
 }
 .cards_about:hover > div {
-  background: #f5f5f5;
+  opacity: 0.9;
 }
 .cards_about {
   overflow: hidden;

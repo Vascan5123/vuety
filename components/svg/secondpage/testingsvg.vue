@@ -94,7 +94,7 @@
     <path
       d="M148,38.69C130,48.35,116.84,66,111,85.58c-3.45,11.59-4.53,23.81-8.47,35.24C91.34,153.33,59.05,174.48,45.28,206c-7.67,17.55-9,38-2.54,56s20.9,33.27,39,39.63c11,3.9,23,4.48,34.69,4.86,22,.7,44.08.78,65.7-3.12,10.29-1.86,20.43-4.61,30.83-5.82,20.1-2.32,40.62,1.21,60.59-2,13.91-2.26,27.1-7.74,39.69-14.06,9.46-4.74,18.76-10,26.55-17.19,20.63-18.93,28.28-49.61,22.73-77.06s-23-51.55-44.89-68.95c-9.64-7.65-20.14-14.14-30.25-21.16a339.16,339.16,0,0,1-37-29.77C222.51,41.53,186.62,17.93,148,38.69Z"
       transform="translate(-38.61 -30.75)"
-      fill="#F76190"
+      :fill="$vuetify.theme.dark ? color_dark : color"
       opacity="0.18"
       style="isolation: isolate"
     />
@@ -105,7 +105,7 @@
     />
     <polygon
       points="116.87 234.61 193.06 234.61 179.58 186.15 128.24 186.15 116.87 234.61"
-      fill="#F76190"
+      :fill="$vuetify.theme.dark ? color_dark : color"
     />
     <polygon
       points="116.87 234.61 193.06 234.61 179.58 186.15 128.24 186.15 116.87 234.61"
@@ -114,7 +114,7 @@
     <path
       d="M307.7,87.42v125A13.66,13.66,0,0,1,294,226H96.58a13.67,13.67,0,0,1-13.67-13.65V87.42A13.67,13.67,0,0,1,96.58,73.75H294a13.67,13.67,0,0,1,13.7,13.64Z"
       transform="translate(-38.61 -30.75)"
-      fill="#F76190"
+      :fill="$vuetify.theme.dark ? color_dark : color"
     />
     <path
       d="M307.7,87.43V197H82.91V87.43A13.68,13.68,0,0,1,96.58,73.75H294a13.69,13.69,0,0,1,13.7,13.68Z"
@@ -129,7 +129,7 @@
     <path
       d="M304.32,90V193.34h-218V90A13.2,13.2,0,0,1,99.56,76.91H291.05A13.2,13.2,0,0,1,304.32,90Z"
       transform="translate(-38.61 -30.75)"
-      fill="#F76190"
+      :fill="$vuetify.theme.dark ? color_dark : color"
       opacity="0.18"
       style="isolation: isolate"
     />
@@ -147,17 +147,10 @@
     <path
       d="M147.72,125.59h104a7,7,0,0,1,7,7h0a7,7,0,0,1-7,7h-104v-14Z"
       transform="translate(-38.61 -30.75)"
-      fill="#F76190"
+      :fill="$vuetify.theme.dark ? color_dark : color"
     />
     <rect x="109.11" y="94.84" width="83.96" height="13.94" fill="#fff" />
-    <circle
-      cx="205.52"
-      cy="101.02"
-      r="3.36"
-      fill="none"
-      stroke="#fff"
-      stroke-miterlimit="10"
-    />
+    <circle cx="205.52" cy="101.02" r="3.36" fill="none" stroke="#fff" stroke-miterlimit="10" />
     <path
       d="M247.21,137.24l-1.38-2.57"
       transform="translate(-38.61 -30.75)"
@@ -232,36 +225,12 @@
       width="77.49"
       height="63.4"
       rx="5.95"
-      fill="#F76190"
+      :fill="$vuetify.theme.dark ? color_dark : color"
     />
-    <rect
-      x="43.22"
-      y="36.32"
-      width="56.82"
-      height="3.57"
-      fill="url(#linear-gradient3-6)"
-    />
-    <rect
-      x="43.22"
-      y="47.02"
-      width="35.38"
-      height="3.57"
-      fill="url(#linear-gradient3-7)"
-    />
-    <rect
-      x="43.22"
-      y="57.72"
-      width="56.82"
-      height="3.57"
-      fill="url(#linear-gradient3-8)"
-    />
-    <rect
-      x="43.22"
-      y="68.42"
-      width="35.38"
-      height="3.57"
-      fill="url(#linear-gradient3-9)"
-    />
+    <rect x="43.22" y="36.32" width="56.82" height="3.57" fill="url(#linear-gradient3-6)" />
+    <rect x="43.22" y="47.02" width="35.38" height="3.57" fill="url(#linear-gradient3-7)" />
+    <rect x="43.22" y="57.72" width="56.82" height="3.57" fill="url(#linear-gradient3-8)" />
+    <rect x="43.22" y="68.42" width="35.38" height="3.57" fill="url(#linear-gradient3-9)" />
     <g class="fly_block">
       <rect
         x="172.21"
@@ -271,27 +240,45 @@
         rx="9.12"
         fill="url(#linear-gradient3-3)"
       />
-      <rect
-        x="168.46"
-        y="119.15"
-        width="77.49"
-        height="63.4"
-        rx="9.12"
-        fill="#fff"
-      />
+      <rect x="168.46" y="119.15" width="77.49" height="63.4" rx="9.12" fill="#fff" />
       <polygon
         points="234.96 172.91 179.84 172.91 179.84 132.22 180.84 132.22 180.84 171.91 234.96 171.91 234.96 172.91"
-        fill="#F76190"
+        :fill="color"
       />
-      <rect x="189.07" y="152.53" width="6.48" height="19.38" fill="#F76190" />
-      <rect x="202.29" y="144.08" width="6.48" height="27.83" fill="#F76190" />
-      <rect x="216.8" y="138.06" width="6.48" height="33.85" fill="#F76190" />
+      <rect
+        x="189.07"
+        y="152.53"
+        width="6.48"
+        height="19.38"
+        :fill="color"
+      />
+      <rect
+        x="202.29"
+        y="144.08"
+        width="6.48"
+        height="27.83"
+        :fill="color"
+      />
+      <rect
+        x="216.8"
+        y="138.06"
+        width="6.48"
+        height="33.85"
+        :fill="color"
+      />
     </g>
   </svg>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      color: "#F76190",
+      color_dark: "#9C9C9C",
+    };
+  },
+};
 </script>
 
 <style scoped>

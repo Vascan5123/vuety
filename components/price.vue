@@ -1,13 +1,23 @@
 <template>
   <v-container class="text-center px-md-10 py-10" fluid>
     <v-row justify="center" class="my-5">
-      <v-card-title class="font-weight-light text_top raleway">Unlock Full Power Of sApp</v-card-title>
+      <v-card-title
+        class="font-weight-light text_top raleway"
+        :class="$vuetify.theme.dark ? 'text_top_dark' : ''"
+      >Unlock Full Power Of sApp</v-card-title>
       <v-card-subtitle
         class="font-weight-regular py-8 raleway text_top_subtitle"
       >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</v-card-subtitle>
     </v-row>
     <v-row justify="center" class="ma-0">
-      <v-col cols="12" sm="4" md="4" lg="3" class="px-md-8 price_cards">
+      <v-col
+        cols="12"
+        sm="4"
+        md="4"
+        lg="3"
+        class="px-md-8"
+        :class="$vuetify.theme.dark ? 'price_cards_dark' : 'price_cards'"
+      >
         <v-card class="rounded-lg py-4 py-md-8" color="price_card" elevation="3">
           <v-row class="ma-0" justify="center">
             <img width="50%" height="auto" src="../static/icons/bike.png" alt="bike" />
@@ -15,6 +25,7 @@
           <div class="price_content">
             <v-card-title
               class="headline font-weight-regular text-uppercase text_name_categories_price justify-center"
+              :class="$vuetify.theme.dark ? 'text_name_categories_price_dark' : ''"
             >Basic</v-card-title>
             <v-card-title
               class="headline font-weight-black text-uppercase text_price justify-center secondary--text"
@@ -50,7 +61,14 @@
           </div>
         </v-card>
       </v-col>
-      <v-col cols="12" sm="4" md="4" lg="3" class="px-md-8 price_cards">
+      <v-col
+        cols="12"
+        sm="4"
+        md="4"
+        lg="3"
+        class="px-md-8"
+        :class="$vuetify.theme.dark ? 'price_cards_dark' : 'price_cards'"
+      >
         <v-card class="rounded-lg py-4 py-md-8" color="price_card" elevation="3">
           <v-row class="ma-0" justify="center">
             <img width="50%" height="auto" src="../static/icons/scooter.png" alt="scooter" />
@@ -58,6 +76,7 @@
           <div class="price_content">
             <v-card-title
               class="headline font-weight-regular text-uppercase text_name_categories_price justify-center"
+              :class="$vuetify.theme.dark ? 'text_name_categories_price_dark' : ''"
             >Pro</v-card-title>
             <v-card-title
               class="headline font-weight-black text-uppercase text_price justify-center secondary--text"
@@ -93,7 +112,14 @@
           </div>
         </v-card>
       </v-col>
-      <v-col cols="12" sm="4" md="4" lg="3" class="px-md-8 price_cards">
+      <v-col
+        cols="12"
+        sm="4"
+        md="4"
+        lg="3"
+        class="px-md-8"
+        :class="$vuetify.theme.dark ? 'price_cards_dark' : 'price_cards'"
+      >
         <v-card class="rounded-lg py-4 py-md-8" color="price_card" elevation="3">
           <v-row class="ma-0" justify="center">
             <img width="50%" height="auto" src="../static/icons/car.png" alt="car" />
@@ -101,6 +127,7 @@
           <div class="price_content">
             <v-card-title
               class="headline font-weight-regular text-uppercase text_name_categories_price justify-center"
+              :class="$vuetify.theme.dark ? 'text_name_categories_price_dark' : ''"
             >Gold</v-card-title>
             <v-card-title
               class="headline font-weight-black text-uppercase text_price justify-center secondary--text"
@@ -154,6 +181,18 @@ export default {};
 .price_cards:hover > div {
   background: #f5f5f5;
 }
+.price_cards_dark {
+  transition: 0.2s;
+}
+.price_cards_dark > div {
+  background: #363636;
+}
+.price_cards_dark:hover {
+  transform: translate(0px, -20px);
+}
+.price_cards_dark:hover > div {
+  background: #333333;
+}
 .text_top_subtitle {
   font-size: 1.25rem !important;
   line-height: 2rem;
@@ -163,6 +202,9 @@ export default {};
   word-break: keep-all;
   font-size: 2.5rem;
   line-height: 3.125rem;
+}
+.text_top_dark {
+  color: #7650a1 !important;
 }
 .text_price {
   align-items: flex-end !important;
@@ -176,5 +218,8 @@ export default {};
   /* color: rgb(83, 83, 83) !important; */
   letter-spacing: 0.3rem !important;
   font-size: 1.5rem;
+}
+.text_name_categories_price_dark {
+  color: #7650a1 !important;
 }
 </style>

@@ -15,13 +15,19 @@
         sm="4"
         md="4"
         lg="3"
-        class="px-md-8"
+        class="px-xl-8"
         :class="$vuetify.theme.dark ? 'price_cards_dark' : 'price_cards'"
       >
         <v-card class="rounded-lg py-4 py-md-8" color="price_card" elevation="3">
-          <v-row class="ma-0" justify="center">
-            <img width="50%" height="auto" src="../static/icons/bike.png" alt="bike" />
-          </v-row>
+          <!-- <v-row class="ma-0" justify="center"> -->
+          <!-- <img width="50%" src="../static/icons/bike.png" alt="bike" /> -->
+          <v-img
+            class="mx-auto"
+            contain
+            width="60%"
+            :src="img_bike"
+          ></v-img>
+          <!-- </v-row> -->
           <div class="price_content">
             <v-card-title
               class="headline font-weight-regular text-uppercase text_name_categories_price justify-center"
@@ -66,13 +72,16 @@
         sm="4"
         md="4"
         lg="3"
-        class="px-md-8"
+        class="px-xl-8"
         :class="$vuetify.theme.dark ? 'price_cards_dark' : 'price_cards'"
       >
         <v-card class="rounded-lg py-4 py-md-8" color="price_card" elevation="3">
-          <v-row class="ma-0" justify="center">
-            <img width="50%" height="auto" src="../static/icons/scooter.png" alt="scooter" />
-          </v-row>
+          <v-img
+            class="mx-auto"
+            contain
+            width="60%"
+            :src="img_scooter"
+          ></v-img>
           <div class="price_content">
             <v-card-title
               class="headline font-weight-regular text-uppercase text_name_categories_price justify-center"
@@ -117,13 +126,16 @@
         sm="4"
         md="4"
         lg="3"
-        class="px-md-8"
+        class="px-xl-8"
         :class="$vuetify.theme.dark ? 'price_cards_dark' : 'price_cards'"
       >
         <v-card class="rounded-lg py-4 py-md-8" color="price_card" elevation="3">
-          <v-row class="ma-0" justify="center">
-            <img width="50%" height="auto" src="../static/icons/car.png" alt="car" />
-          </v-row>
+          <v-img
+            class="mx-auto"
+            contain
+            width="60%"
+            :src="img_car"
+          ></v-img>
           <div class="price_content">
             <v-card-title
               class="headline font-weight-regular text-uppercase text_name_categories_price justify-center"
@@ -168,7 +180,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return{
+      img_bike: require('../static/icons/bike.png'),
+      img_scooter: require('../static/icons/scooter.png'),
+      img_car: require('../static/icons/car.png'),
+    }
+  }
+};
 </script>
 
 <style scoped>

@@ -1,11 +1,14 @@
 <template>
   <div app>
     <v-toolbar absolute flat class="toolbar1 px-4 px-sm-16" width="100%" color="transparent">
-      <v-toolbar-title
-        :class="$vuetify.theme.dark ? 'title1_dark' : 'purple_light--text'"
-        class="raleway font-weight-bold title1"
-        @click="$router.push('/')"
-      >Vuety</v-toolbar-title>
+      <v-toolbar-title>
+        <v-btn
+          class="ma-0 raleway font-weight-bold title1"
+          :class="$vuetify.theme.dark ? 'title1_dark' : 'purple_light--text'"
+          text
+          href="/#"
+        >Vuety</v-btn>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
 
       <v-btn
@@ -51,10 +54,14 @@
       inverted-scroll
       class="toolbar1 px-4 px-md-16"
       width="100%"
-      color="primary"
+      :color="$vuetify.theme.dark ? '#444' : 'primary'"
     >
-      <v-toolbar-title class>
-        <v-btn class="ma-0 raleway font-weight-bold white--text title1" text href="#top">Vuety</v-btn>
+      <v-toolbar-title>
+        <v-btn
+          class="ma-0 raleway font-weight-bold white--text title1"
+          text
+          href="/#firstpageid"
+        >Vuety</v-btn>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -103,7 +110,8 @@
           v-for="item in items"
           :key="item.title"
           link
-          @click="drawer = false, goto(item.link)"
+          :href="item.link"
+          @click="drawer = false"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -152,7 +160,7 @@ export default {
       app_bar: false,
       drawer: false,
       items: [
-        { title: "Home", icon: "mdi-home", link: "/#top" },
+        { title: "Home", icon: "mdi-home", link: "/#firstpageid" },
         { title: "Our services", icon: "mdi-widgets", link: "/#secondpageid" },
         { title: "Technologies", icon: "mdi-nodejs", link: "/#thirdpageid" },
         { title: "Price", icon: "mdi-cash-multiple", link: "/#priceid" },
@@ -191,7 +199,7 @@ export default {
   background: #1e1e1e !important;
 }
 .title1_dark {
-  color: #512da8;
+  color: #8a5cc0;
 }
 .title1 {
   cursor: pointer;

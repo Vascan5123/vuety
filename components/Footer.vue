@@ -1,7 +1,7 @@
 <template>
     <v-container fluid class="container_footer mt-12">
-      <v-row no-gutters>
-        <svg viewBox="0 0 845 185" class="svg_footer">
+      <!-- <v-row no-gutters> -->
+        <svg viewBox="0 0 845 185" class="svg_footer" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M845 70.4483C845 70.4483 751.945 -19.5958 610.361 3.91591C415.746 36.2341 401.065 86.0875 246.145 119.472C72.0421 156.99 1 99.9628 1 99.9628V176H845V70.4483Z"
             :fill="$vuetify.theme.dark ? 'url(#linear_footer_top)' : '#FFD1DC'"
@@ -12,7 +12,7 @@
             :fill="$vuetify.theme.dark ? '#6F6F6F' : 'url(#paint0_linearfooter)'"
           />
           <defs>
-            <linearGradient id="paint0_linearfooter" x1="0" x2="0.75" y1="0" y2="0">
+            <linearGradient id="paint0_linearfooter" x1="0" x2="0.9" y1="0" y2="0">
               <stop offset="0%" stop-color="#FF648A" />
               <stop offset="100%" stop-color="#EA54AD" />
             </linearGradient>
@@ -24,7 +24,7 @@
             </linearGradient>
           </defs>
         </svg>
-      </v-row>
+      <!-- </v-row> -->
       <v-row no-gutters>
         <v-card
           width="100%"
@@ -297,13 +297,14 @@ export default {
 }
 
 .svg_footer {
-  width: 100%;
+  width: 101%;
   position: relative;
-  top: 2px;
+  left: -2px;
+  top: 1px;
 }
 
 .card_footer {
-  background: linear-gradient(75.69deg, #ff648a 0%, #ea54ad 97.14%);
+  background: linear-gradient(90deg, #ff648a 0%, #ea54ad 100%);
 }
 .card_footer_dark {
   background: #6f6f6f !important;
@@ -340,6 +341,7 @@ export default {
     #3607a6 100%
   ) !important; */
   padding: 0px;
+  line-height: 0 !important;
 }
 
 .svg_white {

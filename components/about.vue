@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pt-15">
+  <v-container class="pt-15" fluid>
     <v-card flat color="transparent" class="mb-10">
       <v-card-title
         class="justify-center text-center text_top raleway font-weight-light"
@@ -13,7 +13,7 @@
       </v-col>
     </v-card>
     <v-row justify="center">
-      <v-col cols="6" sm="5" md="4" lg="3" xl="2">
+      <v-col cols="6" sm="5" md="3" lg="2" xl="2">
         <v-card
           elevation="3"
           class="text-center cards_about"
@@ -44,7 +44,7 @@
           </v-card>
         </v-card>
       </v-col>
-      <v-col cols="6" sm="5" md="4" lg="3" xl="2">
+      <v-col cols="6" sm="5" md="3" lg="2" xl="2">
         <v-card
           elevation="3"
           class="text-center cards_about"
@@ -75,7 +75,7 @@
           </v-card>
         </v-card>
       </v-col>
-      <v-col cols="6" sm="5" md="4" lg="3" xl="2">
+      <v-col cols="6" sm="5" md="3" lg="2" xl="2">
         <v-card
           elevation="3"
           class="text-center cards_about"
@@ -106,7 +106,7 @@
           </v-card>
         </v-card>
       </v-col>
-      <v-col cols="6" sm="5" md="4" lg="3" xl="2">
+      <v-col cols="6" sm="5" md="3" lg="2" xl="2">
         <v-card
           elevation="3"
           class="text-center cards_about"

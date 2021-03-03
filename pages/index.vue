@@ -76,23 +76,36 @@ export default {
   },
   mounted() {
     if (process.browser) {
+      window.location.href = '/#';
+
       var newHeight = window.innerHeight;
-      var newWidth = window.innerHeight;
-      if (newHeight < 700) {
+      var newWidth = window.innerWidth;
+      if (newHeight < 700 && newWidth < 600) {
         newHeight = 700;
+        document.getElementById(
+          "firstpageid"
+        ).style.minHeight = `${newHeight}px`;
+      } else {
+        document.getElementById(
+          "firstpageid"
+        ).style.minHeight = `${newHeight}px`;
       }
-      document.getElementById("firstpageid").style.height = `${newHeight}px`;
       window.addEventListener("scroll", this.onScroll);
 
       window.addEventListener("resize", function () {
         newHeight = window.innerHeight;
-        newWidth = window.innerHeight;
+        newWidth = window.innerWidth;
         if (newHeight < 700 && newWidth < 600) {
           newHeight = 700;
-        } else if (newHeight > 701 && newHeight < 850) {
-          newHeight = window.outerHeight;
+
+          document.getElementById(
+            "firstpageid"
+          ).style.minHeight = `${newHeight}px`;
+        } else {
+          document.getElementById(
+            "firstpageid"
+          ).style.minHeight = `${newHeight}px`;
         }
-        document.getElementById("firstpageid").style.height = `${newHeight}px`;
       });
     }
   },
@@ -101,7 +114,6 @@ export default {
 <style scoped>
 #firstpageid {
   width: 100vw;
-  height: 100vh;
 }
 .main {
   position: relative;

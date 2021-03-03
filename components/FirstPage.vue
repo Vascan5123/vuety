@@ -81,9 +81,10 @@
       </transition>
     </v-row>
     <v-btn
+      id="btn_bottom_id"
       :class="$vuetify.theme.dark ? 'btn_bottom_dark' : 'btn_bottom_light'"
       class="btn_bottom d-none d-md-flex"
-      href="#secondpageid"
+      href="/#secondpageid"
       icon
       x-large
       elevation="2"
@@ -117,6 +118,14 @@ export default {
     if (process.client) {
       this.svg_1_active = true;
       this.svg_2_active = true;
+
+      var newHeight2 = window.innerHeight - 80;
+      document.getElementById("btn_bottom_id").style.top = `${newHeight2}px`;
+
+      window.addEventListener("resize", function () {
+        newHeight2 = window.innerHeight - 80;
+        document.getElementById("btn_bottom_id").style.top = `${newHeight2}px`;
+      });
     }
   },
 };
@@ -140,7 +149,6 @@ export default {
 .btn_bottom {
   z-index: 2;
   position: absolute;
-  bottom: 3%;
   left: 50%;
   transform: translate(-50%, 0%);
   animation: fly_btn 1s infinite alternate ease-in;
@@ -150,7 +158,7 @@ export default {
     transform: translate(-50%, 0%);
   }
   to {
-    transform: translate(-50%, 30%);
+    transform: translate(-50%, 20%);
   }
 }
 .col_1 {

@@ -1,5 +1,5 @@
 <template>
-  <v-container id="secondpage" class="text-center px-md-10" fluid>
+  <v-container id="secondpage" class="text-center px-md-10 pt-15" fluid>
     <v-row>
       <v-col align-self="start" cols="12" sm="6" md="6">
         <v-card class="text-left" flat color="transparent">
@@ -7,21 +7,21 @@
             class="text_top raleway font-weight-light"
             :class="$vuetify.theme.dark ? 'text_top_dark' : ''"
           >Web Development</v-card-title>
-          <v-card-subtitle
+          <!-- <v-card-subtitle
             class="text_top_subtitle raleway font-weight-regular py-8"
             :class="$vuetify.theme.dark ? 'text_top_subtitle_dark' : ''"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Pellentesque aliquet quam turpis, nec imperdiet sem luctus nec. Sed
             pharetra risus a turpis pulvinar rutrum.
-          </v-card-subtitle>
+          </v-card-subtitle> -->
           <v-card-actions>
             <v-row class="text-center px-xl-15" v-if="$vuetify.theme.dark">
               <v-col cols="6" lg="5" class="pa-lg-5">
                 <v-card
                   :color="blockNumber == 0 ? '#444444' : '#9C9C9C'"
                   :class="blockNumber == 0 ? 'cards_dark_active' : 'cards_dark'"
-                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg"
+                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg cards"
                   elevation="3"
                   @click="loadBlock(0)"
                 >
@@ -40,7 +40,7 @@
                 <v-card
                   :color="blockNumber == 1 ? '#444444' : '#9C9C9C'"
                   :class="blockNumber == 1 ? 'cards_dark_active' : 'cards_dark'"
-                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg"
+                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg cards"
                   elevation="3"
                   @click="loadBlock(1)"
                 >
@@ -57,7 +57,7 @@
                 <v-card
                   :color="blockNumber == 2 ? '#444444' : '#9C9C9C'"
                   :class="blockNumber == 2 ? 'cards_dark_active' : 'cards_dark'"
-                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg"
+                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg cards"
                   elevation="3"
                   @click="loadBlock(2)"
                 >
@@ -74,7 +74,7 @@
                 <v-card
                   :color="blockNumber == 3 ? '#444444' : '#9C9C9C'"
                   :class="blockNumber == 3 ? 'cards_dark_active' : 'cards_dark'"
-                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg"
+                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg cards"
                   elevation="3"
                   @click="loadBlock(3)"
                 >
@@ -95,7 +95,7 @@
                 <v-card
                   :color="blockNumber == 0 ? '#EF58A4' : undefined"
                   :dark="blockNumber == 0 ? 'dark' : undefined"
-                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg"
+                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg cards"
                   elevation="3"
                   @click="loadBlock(0)"
                 >
@@ -114,7 +114,7 @@
                 <v-card
                   :color="blockNumber == 1 ? '#EF58A4' : undefined"
                   :dark="blockNumber == 1 ? 'dark' : undefined"
-                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg"
+                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg cards"
                   elevation="3"
                   @click="loadBlock(1)"
                 >
@@ -131,7 +131,7 @@
                 <v-card
                   :color="blockNumber == 2 ? '#EF58A4' : undefined"
                   :dark="blockNumber == 2 ? 'dark' : undefined"
-                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg"
+                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg cards"
                   elevation="3"
                   @click="loadBlock(2)"
                 >
@@ -148,7 +148,7 @@
                 <v-card
                   :color="blockNumber == 3 ? '#EF58A4' : undefined"
                   :dark="blockNumber == 3 ? 'dark' : undefined"
-                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg"
+                  class="pa-5 py-lg-6 py-10 py-sm-3 rounded-lg cards"
                   elevation="3"
                   @click="loadBlock(3)"
                 >
@@ -274,6 +274,15 @@ export default {
 </script>
 
 <style scoped>
+.cards:hover {
+  transform: translate(0px, -20px);
+}
+.cards:hover > div {
+  opacity: 0.9;
+}
+.cards {
+  transition: 0.2s;
+}
 .cards_dark_active {
   border: 3px solid #ea54ad !important;
 }

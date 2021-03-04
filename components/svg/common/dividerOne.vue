@@ -1,5 +1,9 @@
 <template>
-  <v-container fluid :class="$vuetify.theme.dark ? 'container_footer_dark' : 'container_footer'" class=" my-12">
+  <v-container
+    fluid
+    :class="$vuetify.theme.dark ? 'container_footer_dark' : 'container_footer'"
+    class="my-12"
+  >
     <v-parallax :height="height" src="/image1.png">
       <svg :width="`${width}%`" viewBox="0 0 1280 140" class="svg_white">
         <g :class="{active_dark : $vuetify.theme.dark , active_light : !$vuetify.theme.dark}">
@@ -65,7 +69,28 @@ export default {
   },
 };
 </script>
-
+<style>
+@media (max-width: 600px) {
+  .v-parallax__image {
+    bottom: 80% !important;
+  }
+}
+@media (min-width: 601px) and (max-width: 960px) {
+  .v-parallax__image {
+    bottom: 50% !important;
+  }
+}
+@media (min-width: 961px) and (max-width: 1300px) {
+  .v-parallax__image {
+    bottom: 30% !important;
+  }
+}
+.v-parallax__image {
+  max-width: 100%;
+  min-width: auto !important;
+  min-height: auto !important;
+}
+</style>
 <style scoped>
 .active_dark {
   fill: #1e1e1e;
@@ -88,7 +113,7 @@ export default {
   }
 }
 .container_footer {
-  background: linear-gradient(#EA54AD, #8A5CC0) !important;
+  background: linear-gradient(#ea54ad, #8a5cc0) !important;
   padding: 0px;
 }
 .container_footer_dark {

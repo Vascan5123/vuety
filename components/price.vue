@@ -11,7 +11,7 @@
     </v-row>
     <v-row justify="center" class="ma-0">
       <v-col
-        cols="12"
+        cols="10"
         sm="4"
         md="4"
         lg="3"
@@ -21,12 +21,7 @@
         <v-card class="rounded-lg py-4 py-md-8" color="price_card" elevation="3">
           <!-- <v-row class="ma-0" justify="center"> -->
           <!-- <img width="50%" src="../static/icons/bike.png" alt="bike" /> -->
-          <v-img
-            class="mx-auto"
-            contain
-            width="60%"
-            :src="img_bike"
-          ></v-img>
+          <v-img eager class="mx-auto" contain width="60%" :src="img_bike"></v-img>
           <!-- </v-row> -->
           <div class="price_content">
             <v-card-title
@@ -68,7 +63,7 @@
         </v-card>
       </v-col>
       <v-col
-        cols="12"
+        cols="10"
         sm="4"
         md="4"
         lg="3"
@@ -76,12 +71,7 @@
         :class="$vuetify.theme.dark ? 'price_cards_dark' : 'price_cards'"
       >
         <v-card class="rounded-lg py-4 py-md-8" color="price_card" elevation="3">
-          <v-img
-            class="mx-auto"
-            contain
-            width="60%"
-            :src="img_scooter"
-          ></v-img>
+          <v-img eager class="mx-auto" contain width="60%" :src="img_scooter"></v-img>
           <div class="price_content">
             <v-card-title
               class="headline font-weight-regular text-uppercase text_name_categories_price justify-center"
@@ -122,7 +112,7 @@
         </v-card>
       </v-col>
       <v-col
-        cols="12"
+        cols="10"
         sm="4"
         md="4"
         lg="3"
@@ -130,12 +120,7 @@
         :class="$vuetify.theme.dark ? 'price_cards_dark' : 'price_cards'"
       >
         <v-card class="rounded-lg py-4 py-md-8" color="price_card" elevation="3">
-          <v-img
-            class="mx-auto"
-            contain
-            width="60%"
-            :src="img_car"
-          ></v-img>
+          <v-img eager class="mx-auto" contain width="60%" :src="img_car"></v-img>
           <div class="price_content">
             <v-card-title
               class="headline font-weight-regular text-uppercase text_name_categories_price justify-center"
@@ -181,17 +166,22 @@
 
 <script>
 export default {
-  data(){
-    return{
-      img_bike: require('../static/icons/bike.png'),
-      img_scooter: require('../static/icons/scooter.png'),
-      img_car: require('../static/icons/car.png'),
-    }
-  }
+  data() {
+    return {
+      img_bike: require("../static/icons/bike.png"),
+      img_scooter: require("../static/icons/scooter.png"),
+      img_car: require("../static/icons/car.png"),
+    };
+  },
 };
 </script>
 
 <style scoped>
+@media (max-width: 500px) {
+  .price_cards, .price_cards_dark {
+    zoom: 0.85;
+  }
+}
 .price_cards {
   transition: 0.2s;
 }

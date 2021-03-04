@@ -76,15 +76,12 @@ export default {
   },
   mounted() {
     if (process.browser) {
-      window.location.href = '/#';
+      window.location.href = "/#";
 
       var newHeight = window.innerHeight;
       var newWidth = window.innerWidth;
-      if (newHeight < 700 && newWidth < 600) {
-        newHeight = 700;
-        document.getElementById(
-          "firstpageid"
-        ).style.minHeight = `${newHeight}px`;
+      if (newHeight < 850 && newWidth < 600) {
+        document.getElementById("firstpageid").style.minHeight = "auto";
       } else {
         document.getElementById(
           "firstpageid"
@@ -95,12 +92,8 @@ export default {
       window.addEventListener("resize", function () {
         newHeight = window.innerHeight;
         newWidth = window.innerWidth;
-        if (newHeight < 700 && newWidth < 600) {
-          newHeight = 700;
-
-          document.getElementById(
-            "firstpageid"
-          ).style.minHeight = `${newHeight}px`;
+        if (newHeight < 850 && newWidth < 600) {
+          document.getElementById("firstpageid").style.minHeight = "auto";
         } else {
           document.getElementById(
             "firstpageid"

@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="my-16 py-16">
-    <v-row>
-      <v-col cols="12" md="4" class="block_left">
+    <v-row justify="center">
+      <v-col cols="10" md="4" class="block_left">
         <svg width="100%" viewBox="0 0 847 683">
           <g>
             <path
@@ -149,7 +149,7 @@
           </g>
         </svg>
       </v-col>
-      <v-col cols="12" md="8">
+      <v-col cols="10" md="7" offset="0" offset-md="1">
         <v-row class="ma-1 ma-md-8">
           <div class="grid-layout">
             <div class="grid-item grid-item-1 small" @click="SetIcon('1')" :class="$vuetify.theme.dark ? 'grid-item-dark' : ''">
@@ -691,22 +691,29 @@ export default {
 <style scoped>
 @media (max-width: 500px) {
   .grid-layout {
-    grid-template-columns: repeat(auto-fill, 10px);
-    grid-auto-rows: 10px;
-    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fill, 8px);
+    grid-auto-rows: 8px;
+    grid-gap: 10px;
   }
 }
-@media (min-width: 501px) and (max-width: 1440px) {
+@media (min-width: 501px) and (max-width: 1024px) {
   .grid-layout {
-    grid-template-columns: repeat(auto-fill, 15px);
-    grid-auto-rows: 15px;
-    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, 10px);
+    grid-auto-rows: 10px;
+    grid-gap: 11px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .grid-layout {
+    grid-template-columns: repeat(auto-fill, 12px);
+    grid-auto-rows: 12px;
+    grid-gap: 13px;
   }
 }
 @media (min-width: 1441px) {
   .grid-layout {
-    grid-template-columns: repeat(auto-fill, 20px);
-    grid-auto-rows: 20px;
+    grid-template-columns: repeat(auto-fill, 15px);
+    grid-auto-rows: 15px;
     grid-gap: 25px;
   }
   .grid-item-2 {
@@ -765,17 +772,17 @@ export default {
 .small {
   grid-column-end: span 3;
   grid-row-end: span 3;
-  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.15);
 }
 .large {
   grid-column-end: span 4;
   grid-row-end: span 4;
-  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.15);
 }
 .xlarge {
   grid-column-end: span 5;
   grid-row-end: span 5;
-  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.15);
 }
 .btn_openLink:hover {
   cursor: pointer;

@@ -12,8 +12,8 @@
         </v-card-subtitle>
       </v-col>
     </v-card>
-    <v-row justify="center">
-      <v-col cols="6" sm="5" md="3" lg="2" xl="2">
+    <v-row justify="center" class="px-md-15">
+      <v-col cols="6" sm="5" md="3" lg="3" xl="2">
         <v-card
           elevation="3"
           class="text-center cards_about"
@@ -44,7 +44,7 @@
           </v-card>
         </v-card>
       </v-col>
-      <v-col cols="6" sm="5" md="3" lg="2" xl="2">
+      <v-col cols="6" sm="5" md="3" lg="3" xl="2">
         <v-card
           elevation="3"
           class="text-center cards_about"
@@ -75,7 +75,7 @@
           </v-card>
         </v-card>
       </v-col>
-      <v-col cols="6" sm="5" md="3" lg="2" xl="2">
+      <v-col cols="6" sm="5" md="3" lg="3" xl="2">
         <v-card
           elevation="3"
           class="text-center cards_about"
@@ -106,7 +106,7 @@
           </v-card>
         </v-card>
       </v-col>
-      <v-col cols="6" sm="5" md="3" lg="2" xl="2">
+      <v-col cols="6" sm="5" md="3" lg="3" xl="2">
         <v-card
           elevation="3"
           class="text-center cards_about"
@@ -189,7 +189,15 @@ export default {
 }
 .text_top {
   word-break: keep-all;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 3.125rem;
+}
+@media (max-width: 500px) {
+  .text_top {
+    font-size: 2rem !important;
+  }
+  .text_top_subtitle {
+    font-size: 1.1rem !important;
+  }
 }
 </style>

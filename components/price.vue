@@ -1,14 +1,16 @@
 <template>
   <v-container class="text-center px-md-10 py-10" fluid>
-    <v-row justify="center" class="my-5">
+    <v-card flat color="transparent" class="mb-10">
       <v-card-title
-        class="font-weight-light text_top raleway"
+        class="justify-center text-center text_top raleway font-weight-light"
         :class="$vuetify.theme.dark ? 'text_top_dark' : ''"
       >Unlock Full Power Of sApp</v-card-title>
-      <v-card-subtitle
-        class="font-weight-regular py-8 raleway text_top_subtitle"
-      >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</v-card-subtitle>
-    </v-row>
+      <v-col cols="11" md="8" class="mx-auto text-center pa-0">
+        <v-card-subtitle class="justify-center text_top_subtitle raleway font-weight-regular pa-0">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+        </v-card-subtitle>
+      </v-col>
+    </v-card>
     <v-row justify="center" class="ma-0">
       <v-col
         cols="10"
@@ -178,7 +180,8 @@ export default {
 
 <style scoped>
 @media (max-width: 500px) {
-  .price_cards, .price_cards_dark {
+  .price_cards,
+  .price_cards_dark {
     zoom: 0.85;
   }
 }
@@ -212,6 +215,14 @@ export default {
   word-break: keep-all;
   font-size: 2.5rem;
   line-height: 3.125rem;
+}
+@media (max-width: 500px) {
+  .text_top {
+    font-size: 1.7rem !important;
+  }
+  .text_top_subtitle {
+    font-size: 1rem !important;
+  }
 }
 .text_top_dark {
   color: #7650a1 !important;

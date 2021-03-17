@@ -366,4 +366,9 @@ export default {
   font-size: 2.6rem;
   line-height: 3.125rem;
 }
+@media (max-width: 500px) {
+  .text_top {
+    font-size: 2rem !important;
+  }
+}
 </style>

@@ -67,6 +67,7 @@ export default {
         top: -document.getElementsByTagName("html")[0].offsetHeight,
         behavior: "smooth",
       });
+      this.$router.push("/#top")
     },
     onScroll(e) {
       /* console.log(this.scrollTop) */
@@ -76,8 +77,6 @@ export default {
   },
   mounted() {
     if (process.browser) {
-      window.location.href = "/#";
-
       var newHeight = window.innerHeight;
       var newWidth = window.innerWidth;
       if (newHeight < 850 && newWidth < 600) {

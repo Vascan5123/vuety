@@ -1,4 +1,13 @@
   
+
+    /* let route = this.$router;
+    let routehash = this.$route.hash;
+    route.push("/#");
+    setTimeout(function () {
+      route.push(routehash);
+    }, 100); */
+
+
 :fill="$vuetify.theme.dark ? '#EA54AD' : 'white'"
 
 :fill="$vuetify.theme.dark ? '#444444' : '#F1F1F4'"

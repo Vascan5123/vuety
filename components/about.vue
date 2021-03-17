@@ -3,6 +3,7 @@
     <v-card flat color="transparent" class="mb-10">
       <v-card-title
         class="justify-center text-center text_top raleway font-weight-light"
+        :class="$vuetify.theme.dark ? 'text_top_dark' : ''"
       >Our Team Members</v-card-title>
       <v-col cols="11" md="8" class="mx-auto text-center pa-0">
         <v-card-subtitle class="justify-center text_top_subtitle raleway font-weight-regular pa-0">
@@ -22,10 +23,10 @@
         >
           <firstPerson />
           <v-card class="pa-2" flat color="transparent">
-            <v-card-title class="justify-center text_cards pt-0 raleway">Robert Statham</v-card-title>
+            <v-card-title class="justify-center text_cards px-0 raleway">Robert Statham</v-card-title>
             <v-card-subtitle class="text_cards raleway">Web Developer</v-card-subtitle>
             <v-card-text
-              class="text_cards pb-0 raleway"
+              class="text_cards px-0 raleway"
             >Authoritatively engage leading-edge processes tactical capital</v-card-text>
             <v-card-actions class="justify-center">
               <v-btn href="#" icon aria-label="facebook">
@@ -53,10 +54,10 @@
         >
           <secondPerson />
           <v-card class="pa-2" flat color="transparent">
-            <v-card-title class="justify-center text_cards pt-0 raleway">Robert Statham</v-card-title>
+            <v-card-title class="justify-center text_cards px-0 raleway">Robert Statham</v-card-title>
             <v-card-subtitle class="text_cards raleway">Web Developer</v-card-subtitle>
             <v-card-text
-              class="text_cards pb-0 raleway"
+              class="text_cards px-0 raleway"
             >Authoritatively engage leading-edge processes tactical capital</v-card-text>
             <v-card-actions class="justify-center">
               <v-btn href="#" icon aria-label="facebook">
@@ -84,10 +85,10 @@
         >
           <thirdPerson />
           <v-card class="pa-2" flat color="transparent">
-            <v-card-title class="justify-center text_cards pt-0 raleway">Robert Statham</v-card-title>
+            <v-card-title class="justify-center text_cards px-0 raleway">Robert Statham</v-card-title>
             <v-card-subtitle class="text_cards raleway">Web Developer</v-card-subtitle>
             <v-card-text
-              class="text_cards pb-0 raleway"
+              class="text_cards px-0 raleway"
             >Authoritatively engage leading-edge processes tactical capital</v-card-text>
             <v-card-actions class="justify-center">
               <v-btn href="#" icon aria-label="facebook">
@@ -115,10 +116,10 @@
         >
           <fourPerson />
           <v-card class="pa-2" flat color="transparent">
-            <v-card-title class="justify-center text_cards pt-0 raleway">Robert Statham</v-card-title>
+            <v-card-title class="justify-center text_cards px-0 raleway">Robert Statham</v-card-title>
             <v-card-subtitle class="text_cards raleway">Web Developer</v-card-subtitle>
             <v-card-text
-              class="text_cards pb-0 raleway"
+              class="text_cards px-0 raleway"
             >Authoritatively engage leading-edge processes tactical capital</v-card-text>
             <v-card-actions class="justify-center">
               <v-btn href="#" icon aria-label="facebook">
@@ -199,5 +200,8 @@ export default {
   .text_top_subtitle {
     font-size: 1.1rem !important;
   }
+}
+.text_top_dark {
+  color: #7650a1 !important;
 }
 </style>

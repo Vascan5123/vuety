@@ -1,12 +1,16 @@
 <template>
   <v-container class="text-center px-md-10 py-10" fluid>
-    <v-card-title
-      class="font-weight-light text_top justify-center raleway"
-      :class="$vuetify.theme.dark ? 'text_top_dark' : ''"
-    >Get in Touch</v-card-title>
-    <v-card-subtitle
-      class="text_top_subtitle raleway font-weight-regular py-8"
-    >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</v-card-subtitle>
+    <v-card flat color="transparent" class="mb-10">
+      <v-card-title
+        class="justify-center text-center text_top raleway font-weight-light"
+        :class="$vuetify.theme.dark ? 'text_top_dark' : ''"
+      >Get in Touch</v-card-title>
+      <v-col cols="11" md="8" class="mx-auto text-center pa-0">
+        <v-card-subtitle
+          class="justify-center text_top_subtitle raleway font-weight-regular pa-0"
+        >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</v-card-subtitle>
+      </v-col>
+    </v-card>
     <v-row justify="center">
       <v-col cols="12" sm="6" md="4">
         <v-card

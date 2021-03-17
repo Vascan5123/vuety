@@ -18,6 +18,13 @@ export default {
     return {};
   },
   mounted() {
+    if (process.browser) {
+      setTimeout(function () {
+        document.getElementsByTagName("html")[0].style.scrollBehavior =
+          "smooth";
+      }, 300);
+    }
+
     const theme = localStorage.getItem("dark_theme");
     if (theme) {
       if (theme == "true") {
@@ -35,7 +42,7 @@ export default {
 };
 </script>
 <style>
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 </style>
